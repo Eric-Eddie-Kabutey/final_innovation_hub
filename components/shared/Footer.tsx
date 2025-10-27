@@ -1,99 +1,71 @@
-import {
-    Footer,
-    FooterColumn,
-    FooterBottom,
-    FooterContent,
-} from "@/components/ui/footer";
+
+'use client';
 import LaunchUI from "@/components/logos/launch-ui";
 import Link from "next/link";
-import { Github, Linkedin, Instagram } from "lucide-react";
+import Image from "next/image";
+import Typography from "./typography";
+import logo from "@/public/assets/images/logo_tef.png"
+import RedLinesBackground from "../reusable/redline-background";
 
-export default function FooterSection() {
+
+export default function Footer() {
     return (
-        <footer className="w-full bg-background px-4">
-            <div className="mx-auto max-w-container">
-                <Footer className="border-t pt-8">
-                    <FooterContent className="sm:grid-cols-2 md:grid-cols-3">
-                        <FooterColumn className="col-span-2 flex-row items-center justify-between gap-8 border-b pb-8 md:col-span-1 md:flex-col md:items-start md:justify-start md:border-b-0">
-                            <div className="flex items-center gap-2">
-                                <LaunchUI />
-                                <h3 className="text-xl font-bold">KtechHub</h3>
-                            </div>
-                            <div className="ml-2.5 flex gap-4 sm:ml-0">
-                                <Link
-                                    href="/"
-                                    className="text-muted-foreground"
-                                >
-                                    <span className="sr-only">GitHub</span>
-                                    <Github className="h-5 w-5" />
-                                </Link>
-                                <Link
-                                    href="/"
-                                    className="text-muted-foreground"
-                                >
-                                    <span className="sr-only">Twitter</span>
-                                    <Linkedin className="h-5 w-5" />
-                                </Link>
-                                <Link href="/" className="text-muted-foreground">
-                                    <span className="sr-only">Discord</span>
-                                    <Instagram className="h-5 w-5" />
-                                </Link>
-                            </div>
-                        </FooterColumn>
-                        <FooterColumn>
-                            <h3 className="text-md pt-1 font-semibold">Product</h3>
-                            <Link href="#" className="text-sm text-muted-foreground">
-                                Changelog
-                            </Link>
-                            <Link href="#" className="text-sm text-muted-foreground">
-                                Documentation
-                            </Link>
-                        </FooterColumn>
-                        <FooterColumn>
-                            <h3 className="text-md pt-1 font-semibold">Company</h3>
-                            <Link href="#" className="text-sm text-muted-foreground">
-                                About
-                            </Link>
-                            <Link href="#" className="text-sm text-muted-foreground">
-                                Careers
-                            </Link>
-                            <Link href="#" className="text-sm text-muted-foreground">
-                                Blog
-                            </Link>
-                        </FooterColumn>
-                        <FooterColumn>
-                            <h3 className="text-md pt-1 font-semibold">Contact</h3>
-                            <Link href="#" className="text-sm text-muted-foreground">
-                                Discord
-                            </Link>
-                            <Link href="#" className="text-sm text-muted-foreground">
-                                Twitter
-                            </Link>
-                            <Link
-                                href="/"
-                                className="text-sm text-muted-foreground"
-                            >
-                                Github
-                            </Link>
-                        </FooterColumn>
-                        <FooterColumn>
-                            <h3 className="text-md pt-1 font-semibold">Legal</h3>
-                            <Link href="#" className="text-sm text-muted-foreground">
-                                Privacy Policy
-                            </Link>
-                            <Link href="#" className="text-sm text-muted-foreground">
-                                Terms of Service
-                            </Link>
-                            <Link href="#" className="text-sm text-muted-foreground">
-                                Cookie Policy
-                            </Link>
-                        </FooterColumn>
-                    </FooterContent>
-                    <FooterBottom className="border-0">
-                        <div>© 2024 KtechHub. All rights reserved</div>
-                    </FooterBottom>
-                </Footer>
-            </div>
-        </footer>
+        <div className="w-full py-12">
+            <section className="max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto flex justify-between">
+                <div className=" w-[35%] flex flex-col gap-4">
+                    <RedLinesBackground />
+                    <Link
+                        href="/"
+                        className=" flex items-center gap-2 text-xl font-bold"
+                    >
+                        <div className="w-10 h-fit">
+                            <Image
+                                src={logo}
+                                alt="Innovation logo"
+                            />
+                        </div>
+                        <div className="flex items-center gap-">
+                            <Typography
+                                typo="header-6-medium"
+                                className="uppercase text-gray-500"
+                            >Innovation</Typography>
+                            <Typography
+                                typo="header-6-medium"
+                                className="uppercase"
+                            >Hub</Typography>
+
+                        </div>
+                    </Link>
+                    <div className="w-fit flex flex-col items-center text-gray-600">
+                        <Typography
+                            typo="header-5-medium"
+                            className="uppercase text-center"
+                        >Empowering</Typography>
+                        <Typography
+                            typo="header-3-medium"
+                            className="uppercase text-center"
+                        >African</Typography>
+                        <Typography
+                            typo="header-5-medium"
+                            className="uppercase text-center"
+                        >Entrepreneurs</Typography>
+                    </div>
+                </div>
+                <div className="flex-1 flex flex-col gap-6">
+                    <Typography
+                        typo="body-large-light"
+                    >Connect with Us</Typography>
+                    <div className="flex flex-col gap-2 text-[16px] font-light">
+                        <Link href="/">Linkedin</Link>
+                        <Link href="/">Facebook</Link>
+                        <Link href="/">X.com</Link>
+                        <Link href="/">Instagram</Link>
+                    </div>
+                    <div className="font-light">
+                        <Link href="/">Privacy Policy</Link>
+                    </div>
+                </div>
+            </section>
+        </div>
     );
 }

@@ -2,23 +2,29 @@ import Navbar from "@/components/shared/Navbar"
 import FooterSection from "@/components/shared/Footer";
 import Hero from "@/components/home/Hero";
 import Features from "@/components/home/Features";
-import Stats from "@/components/home/Stats";
-import Testimonials from "@/components/home/Testimonials";
-import CTA from "@/components/home/CTA";
+import GreenEnergy from "@/components/home/green-energy";
+import OurServices from "@/components/home/our-services";
+import DemocratisingLuck from "@/components/home/democratising-luck";
+import ImpactDriven from "@/components/home/impact-driven";
+import HomeMentorship from "@/components/home/mentorship";
+import AlumniNetwork from "@/components/home/alumni-network";
+import Faqs from "@/components/home/faqs";
+import QuickLinks from "@/components/home/quick-links";
 
 export default function Home() {
   return (
     <>
       <Navbar />
-      <div className="items-center justify-items-center font-[family-name:var(--font-geist-sans)]">
-        <main className="max-w-container mx-auto">
           <Hero />
-          <Features />
-          <Stats />
-          <Testimonials />
-          <CTA />
-        </main>
-      </div>
+          <GreenEnergy />
+          <OurServices />
+          <DemocratisingLuck />
+          <ImpactDriven />
+          <HomeMentorship />
+          <AlumniNetwork />
+          <Faqs />
+          <QuickLinks />
+          
       <FooterSection />
     </>
   );

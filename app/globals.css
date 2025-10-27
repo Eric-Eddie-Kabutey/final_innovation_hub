@@ -34,36 +34,69 @@
     --brand: 27 96% 61%;
     --brand-foreground: 31 97% 72%;
   }
-  .dark {
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
-    --card: 240 3.7% 15.9%;
-    --card-foreground: 0 0% 98%;
-    --popover: 240 10% 3.9%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 0 0% 98%;
-    --primary-foreground: 240 5.9% 10%;
-    --secondary: 240 3.7% 15.9%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 0 0% 98%;
-    --accent: 0 0% 98%;
-    --accent-foreground: 0 0% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 85.7% 97.3%;
-    --border: 0 0% 98%;
-    --input: 240 3.7% 15.9%;
-    --ring: 240 4.9% 83.9%;
 
-    --chart-1: 220 70% 50%;
-    --chart-2: 160 60% 45%;
-    --chart-3: 30 80% 55%;
-    --chart-4: 280 65% 60%;
-    --chart-5: 340 75% 55%;
+}
 
-    --brand: 31 97% 72%;
-    --brand-foreground: 27 96% 61%;
-  }
+.max-container {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.mentor-section {
+    position: relative;
+    background-color: #53565a;
+    clip-path: polygon(69% 0, 100% 16%, 100% 100%, 0 100%, 0 8%);
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.mentor-section:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url("/assets/images/globe_bg.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    pointer-events: none;
+    mix-blend-mode: overlay;
+}
+
+.countries-text-clip {
+    background-image: url("/assets/images/text-clip-img.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.newsletter_bg {
+    background-image: url("/assets/images/newsletterImg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* color: transparent; */
+}
+
+.redlines_bg {
+    background-image: url("/assets/images/redbackground.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* color: transparent; */
 }
 
 @layer base {

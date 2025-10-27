@@ -11,39 +11,47 @@ import { Menu } from "lucide-react";
 import LaunchUI from "@/components/logos/launch-ui";
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
-import {
-    DropdownMenu,
-    DropdownMenuContent,
-    DropdownMenuItem,
-    DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
 import Link from "next/link";
+import logo from "@/public/assets/images/logo_tef.png"
+import Image from "next/image";
+import Typography from "./typography";
 
 export default function Navbar() {
     const { setTheme } = useTheme();
     return (
-        <header className="sticky top-0 z-50 -mb-4 px-4 pb-4">
-            <div className="fade-bottom absolute left-0 h-24 w-full bg-background/15 backdrop-blur-lg"></div>
+        <header className="w-[80%] mx-auto sticky top-6 z-50 -mb-4 px-4 border rounded-[1.2rem] shadow-md bg-white">
             <div className="relative mx-auto max-w-container">
                 <NavbarComponent>
                     <NavbarLeft>
                         <Link
                             href="/"
-                            className="flex items-center gap-2 text-xl font-bold"
+                            className=" flex items-center gap-2 text-xl font-bold"
                         >
-                            <LaunchUI />
-                            KtechHub
+                            <div className="w-10 h-fit">
+                                <Image 
+                                    src={logo}
+                                    alt="Innovation logo"
+                                />
+                            </div>
+                            <div className="flex items-center gap-">
+                                <Typography
+                                    typo="header-6-medium"
+                                    className="uppercase text-gray-500"
+                                >Innovation</Typography>
+                                <Typography
+                                    typo="header-6-medium"
+                                    className="uppercase"
+                                >Hub</Typography>
+
+                            </div>
                         </Link>
-                        <Navigation />
                     </NavbarLeft>
                     <NavbarRight>
-                        <Link href="/" className="hidden text-sm md:block">
-                            Sign in
-                        </Link>
-                        <Button variant="default" asChild>
-                            <Link href="/">Get Started</Link>
+                        <Navigation />
+                        <Button variant="primary">
+                            <Link href="/">Apply Now</Link>
                         </Button>
-                        <DropdownMenu>
+                        {/* <DropdownMenu>
                             <DropdownMenuTrigger asChild>
                                 <Button variant="outline" size="icon">
                                     <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
@@ -56,7 +64,7 @@ export default function Navbar() {
                                 <DropdownMenuItem onClick={() => setTheme("dark")}>Dark</DropdownMenuItem>
                                 <DropdownMenuItem onClick={() => setTheme("system")}>System</DropdownMenuItem>
                             </DropdownMenuContent>
-                        </DropdownMenu>
+                        </DropdownMenu> */}
                         <Sheet>
                             <SheetTrigger asChild>
                                 <Button
