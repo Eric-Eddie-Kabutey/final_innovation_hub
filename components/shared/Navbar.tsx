@@ -14,6 +14,7 @@ import Image from "next/image";
 import Typography from "./typography";
 
 export default function Navbar() {
+    
     return (
         <header className="w-[85%] mx-auto sticky top-6 z-50 -mb-4 px-4 border rounded-[1.2rem] shadow-md bg-white">
             <div className="relative mx-auto max-w-container">
