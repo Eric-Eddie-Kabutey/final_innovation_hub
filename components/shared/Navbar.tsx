@@ -8,7 +8,6 @@ import {
 } from "@/components/ui/navbar";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
-import { useTheme } from "next-themes";
 import Link from "next/link";
 import logo from "@/public/assets/images/logo_tef.png"
 import Image from "next/image";

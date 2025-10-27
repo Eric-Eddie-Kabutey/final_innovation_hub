@@ -1,7 +1,6 @@
 import Navbar from "@/components/shared/Navbar"
 import FooterSection from "@/components/shared/Footer";
 import Hero from "@/components/home/Hero";
-import Features from "@/components/home/Features";
 import GreenEnergy from "@/components/home/green-energy";
 import OurServices from "@/components/home/our-services";
 import DemocratisingLuck from "@/components/home/democratising-luck";
