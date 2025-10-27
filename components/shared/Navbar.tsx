@@ -8,8 +8,6 @@ import {
 } from "@/components/ui/navbar";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
-import LaunchUI from "@/components/logos/launch-ui";
-import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 import Link from "next/link";
 import logo from "@/public/assets/images/logo_tef.png"
@@ -17,7 +15,6 @@ import Image from "next/image";
 import Typography from "./typography";
 
 export default function Navbar() {
-    const { setTheme } = useTheme();
     return (
         <header className="w-[80%] mx-auto sticky top-6 z-50 -mb-4 px-4 border rounded-[1.2rem] shadow-md bg-white">
             <div className="relative mx-auto max-w-container">

@@ -1,9 +1,7 @@
 'use client';
 import React from 'react'
 import Typography from '../shared/typography'
-import firstImg from "@/public/assets/images/first_mentor.png"
 import mentorsImg from "@/public/assets/images/mentorsImg.png"
-import thirdImg from "@/public/assets/images/third_mentor.png"
 import Image from 'next/image';
 import { Button } from '../ui/button';
 

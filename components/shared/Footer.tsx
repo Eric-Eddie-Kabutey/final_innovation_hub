@@ -1,6 +1,5 @@
 
 'use client';
-import LaunchUI from "@/components/logos/launch-ui";
 import Link from "next/link";
 import Image from "next/image";
 import Typography from "./typography";
