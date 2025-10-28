@@ -17,48 +17,49 @@ import {
 
 const links: { title: string; href: string; description: string, links?: { title: string; href: string; description: string }[] }[] = [
   {
-    title: "About Us",
+    title: "Who we are",
     href: "/about-us",
     description:
       "For sighted users to preview content available behind a link.",
   },
-  // {
-  //   title: "Services",
-  //   href: "/product",
-  //   description:
-  //     "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
-  //   links: [
-  //     {
-  //       title: "Introduction",
-  //       href: "/docs",
-  //       description:
-  //         "Re-usable components built using Radix UI and Tailwind CSS.",
-  //     },
-  //     {
-  //       title: "Installation",
-  //       href: "/docs/installation",
-  //       description:
-  //         "How to install dependencies and structure your app.",
-  //     },
-  //     {
-  //       title: "Typography",
-  //       href: "/doc/typography",
-  //       description:
-  //         "Styles for headings, paragraphs, lists...etc",
-  //     },
-  //   ]
-  // },
+  
   {
     title: "Our Pillars",
-    href: "/services",
+    href: "/our-pillars",
     description:
       "A modal dialog that interrupts the user with important content and expects a response.",
   },
   {
-    title: "Contact Us",
-    href: "/contact-us",
+    title: "Resources",
+    href: "/resources",
     description:
-      "Get in touch with our team for any questions or inquiries.",
+      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+    links: [
+      {
+        title: "News",
+        href: "/resources/news",
+        description:
+          "Re-usable components built using Radix UI and Tailwind CSS.",
+      },
+      {
+        title: "Case Studies",
+        href: "/resources/case-studies",
+        description:
+          "How to install dependencies and structure your app.",
+      },
+      {
+        title: "Tools",
+        href: "/resources/tools",
+        description:
+          "Styles for headings, paragraphs, lists...etc",
+      },
+      {
+        title: "Events",
+        href: "/resources/events",
+        description:
+          "Styles for headings, paragraphs, lists...etc",
+      },
+    ]
   },
 ];
 

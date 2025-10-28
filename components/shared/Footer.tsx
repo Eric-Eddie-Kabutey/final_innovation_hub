@@ -4,7 +4,6 @@ import Link from "next/link";
 import Image from "next/image";
 import Typography from "./typography";
 import logo from "@/public/assets/images/logo_tef.png"
-import RedLinesBackground from "../reusable/redline-background";
 
 
 export default function Footer() {

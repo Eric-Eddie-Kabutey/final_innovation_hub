@@ -99,6 +99,10 @@
     /* color: transparent; */
 }
 
+.icon-icon-6:before {
+    content: '\ea2b';
+}
+
 @layer base {
   * {
     @apply border-border;

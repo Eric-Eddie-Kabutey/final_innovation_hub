@@ -1,23 +1,15 @@
-import Navbar from "@/components/shared/Navbar"
-import FooterSection from "@/components/shared/Footer";
-import HeroSection from "./components/HeroSection";
-import MissionSection from "./components/MissionSection";
-import ValuesSection from "./components/ValuesSection";
-import TeamSection from "./components/TeamSection";
+import AboutPillars from "@/components/about-us/about-pillars";
+import AboutUsMain from "@/components/about-us/about-us-main";
+import VisionMission from "@/components/about-us/vision-mission";
+import Faqs from "@/components/home/faqs";
 
 const AboutUsPage = () => {
   return (
     <>
-      <Navbar />
-      <div className="font-[family-name:var(--font-geist-sans)]">
-        <HeroSection />
-        <main className="max-w-container mx-auto px-4 py-12">
-          <MissionSection />
-          <ValuesSection />
-          <TeamSection />
-        </main>
-      </div>
-      <FooterSection />
+      <AboutUsMain />
+      <VisionMission />
+      <AboutPillars />
+      <Faqs />
     </>
   );
 }
