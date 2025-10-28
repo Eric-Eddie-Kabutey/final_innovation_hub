@@ -9,7 +9,7 @@ function AlumniNetwork() {
   return (
     <div className='w-full py-20'>
         <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto bg-white flex flex-col gap-6'>
-            <div className='max-w-[60%] mx-auto flex flex-col items-center gap-2'>
+            <div className='md:max-w-[60%] mx-auto flex flex-col items-center gap-2'>
                 <Typography
                     typo="body-large-medium"
                     className='text-app-primary'
@@ -36,7 +36,7 @@ function AlumniNetwork() {
                         </div>
                 ))}
             </div>
-            <div className='w-[20%] mx-auto py-8 grid grid-cols-4 gap-6'>
+            <div className='md:w-[20%] w-[40%] mx-auto py-8 grid grid-cols-4 gap-6'>
                 {countryFlags.map((data, index) => (
                     <div
                         key={`Alumni ${index+1}`} 

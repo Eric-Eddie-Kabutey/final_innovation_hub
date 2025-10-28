@@ -31,7 +31,7 @@ function DemocratisingLuck() {
                     <ChevronRight size={25} color='#fe0000' />
                 </Button>
             </div>
-            <div className='w-[800px] h-fit'>
+            <div className='lg:w-[800px] w-full h-fit'>
                 <Image 
                     src={levelingImg}
                     alt='Leveling image'

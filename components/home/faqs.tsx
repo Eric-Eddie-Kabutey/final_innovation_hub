@@ -29,7 +29,7 @@ function Faqs() {
                     >Programmes</Button>
                 </div>
             </div>
-            <div className='w-[60%] mx-auto'>
+            <div className='lg:w-[60%] md:w-[80%] w-full mx-auto'>
                 <Accordion type="single" collapsible>
                     {faqs.map(data => (
                     <AccordionItem

@@ -10,9 +10,9 @@ import RedLinesBackground from "../reusable/redline-background";
 export default function Footer() {
     return (
         <div className="w-full py-12">
-            <section className="max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto flex justify-between">
-                <div className=" w-[35%] flex flex-col gap-4">
-                    <RedLinesBackground />
+            <section className="max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto flex justify-between gap-12">
+                <div className=" md:w-[35%] flex flex-col gap-4">
+                    {/* <RedLinesBackground /> */}
                     <Link
                         href="/"
                         className=" flex items-center gap-2 text-xl font-bold"

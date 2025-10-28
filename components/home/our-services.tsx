@@ -55,20 +55,19 @@ function OurServices() {
           <div className='w-[70%] flex gap-12'>
             <Typography
               typo="header-1-medium"
-              className='w-[300px] !leading-[4rem]'
+              className='max-w-[300px] !leading-[4rem]'
             >
               Energy as a Service
             </Typography>
           </div>
         </div>
 
-        {/* ✅ Cards */}
-        <div className='w-full py-8 grid grid-cols-4 gap-6'>
+        <div className='w-full xl:py-8 py-6 grid lg:grid-cols-4 grid-cols-2 gap-6'>
           {energy_services.map((data, index) => (
             <Card
               key={data.id}
               onClick={() => setSelectedId(data.id)}
-              className={`py-6 px-2 flex flex-col items-center gap-3 bg-[#f5f3ed] border-2 transition-all duration-300 ease-out cursor-pointer 
+              className={`xl:py-6 py-4 xl:px-2 flex flex-col items-center gap-3 bg-[#f5f3ed] border-2 transition-all duration-300 ease-out cursor-pointer 
                 ${selectedId === data.id ? 'border-blue-500 shadow-lg scale-[1.02]' : 'border-transparent hover:shadow-lg'}
               `}
             >

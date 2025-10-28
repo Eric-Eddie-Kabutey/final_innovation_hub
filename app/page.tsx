@@ -9,6 +9,7 @@ import HomeMentorship from "@/components/home/mentorship";
 import AlumniNetwork from "@/components/home/alumni-network";
 import Faqs from "@/components/home/faqs";
 import QuickLinks from "@/components/home/quick-links";
+import Footer from "@/components/shared/Footer";
 
 export default function Home() {
   return (
@@ -24,7 +25,7 @@ export default function Home() {
           <Faqs />
           <QuickLinks />
           
-      <FooterSection />
+      <Footer />
     </>
   );
 }

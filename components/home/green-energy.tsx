@@ -7,8 +7,8 @@ import { Drop, Lightbulb } from "@phosphor-icons/react";
 
 function GreenEnergy() {
   return (
-    <div className='w-full py-16'>
-        <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto flex justify-between gap-20'>
+    <div className='w-full md:py-16 py-12'>
+        <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto flex lg:flex-row flex-col justify-between gap-20'>
             <div className='flex-1 relative h-[450px]'>
                 <div className='w-[80%] h-full'>
                     <Image 
@@ -17,7 +17,7 @@ function GreenEnergy() {
                         className='w-full h-full object-cover rounded-[2rem]'
                     />
                 </div>
-                <div className='w-[350px] absolute -bottom-[5rem] right-0 p-12 bg-[#30584c] rounded-xl'>
+                <div className='w-[350px] absolute xl:-bottom-[5rem] -bottom-[2rem] right-0 p-12 bg-[#30584c] rounded-xl'>
                     <Typography
                         typo="header-3-medium"
                         className='text-white'
@@ -26,14 +26,14 @@ function GreenEnergy() {
                     </Typography>
                 </div>
             </div>
-            <div className='w-[45%] flex flex-col gap-16'>
+            <div className='lg:w-[45%] md:w-[70%] w-full flex flex-col gap-16'>
                 <div className='flex flex-col gap-6'>
                     <Typography
                         typo="body-medium-medium"
                     >GREEN ENERGY REVOLUTION</Typography>
                     <Typography
                         typo="header-1-semibold"
-                        className='!leading-none !font-bold'
+                        className='2xl:!leading-none !leading-tight !font-bold'
                     >
                         Proven Renewable Energy Solutions
                     </Typography>

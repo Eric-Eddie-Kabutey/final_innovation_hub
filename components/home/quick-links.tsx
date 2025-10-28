@@ -20,14 +20,14 @@ function QuickLinks() {
   return (
     <div className='w-full py-20'>
         <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto flex flex-col gap-24'>
-            <div className='w-[80%] mx-auto flex flex-col gap-12'>
+            <div className='lg:w-[80%] w-full mx-auto flex flex-col gap-12'>
                 <Typography
                     typo="body-large-medium"
                     className='text-app-primary uppercase text-center'
                 >
                     Quick Links
                 </Typography>
-                <div className='w-full grid grid-cols-2 gap-12'>
+                <div className='w-full grid grid-cols-2 lg:gap-12 gap-6'>
                     {quick_links.map(data => (
                         <Card
                             key={data.id}
@@ -48,7 +48,7 @@ function QuickLinks() {
                 </div>
             </div>
             <section className='newsletter_bg w-full px-12 py-16 rounded-2xl'>
-                <div className='w-[60%] flex flex-col gap-6'>
+                <div className='lg:w-[60%] md:w-[80%] w-full flex flex-col gap-6'>
                     <div className='flex flex-col gap-2 text-white'>
                         <Typography
                             typo="header-3-medium"
@@ -58,7 +58,7 @@ function QuickLinks() {
                             className='text-gray-200'
                         >We will keep you updated with opportunities and events</Typography>
                     </div>
-                    <form className='h-fit flex items-center gap-4  '>
+                    <form className='h-fit flex items-center flex-wrap gap-4  '>
                         <div className='flex-1 flex flex-col justify-end gap-2 text-white'>
                             <label>First name</label>
                             <input 
@@ -71,7 +71,7 @@ function QuickLinks() {
                                 className='p-3 bg-white rounded-[1.2rem] text-black outline-none focus:outline-none focus:ring-0'
                             />
                         </div>
-                        <div className='h-full flex flex-col gap-2 pt-7'>
+                        <div className='h-full flex flex-col gap-2 md:pt-7'>
                             <Button
                                 variant="primary"
                                 className='w-fit px-10'

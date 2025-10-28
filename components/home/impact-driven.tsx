@@ -10,8 +10,8 @@ import { ChevronRight } from 'lucide-react';
 function ImpactDriven() {
   return (
     <div className='w-full py-24'>
-        <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto flex gap-32'>
-            <div className='w-[550px] h-fit'>
+        <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto flex lg:items-start items-center xl:gap-32 lg:gap-16 gap-8'>
+            <div className='md:block hidden xl:w-[550px] w-[450px] h-fit'>
                 <Image 
                     src={impactMainImg}
                     alt='Impact Image'
@@ -28,7 +28,7 @@ function ImpactDriven() {
                     </Typography>
                     <Typography
                         typo="header-1-medium"
-                        className='!leading-[4.5rem]'
+                        className='xl:!leading-[4.5rem] !leading-[3rem]'
                     >
                         Celebrating a Decade+ of <span className='text-app-primary'>Impact</span> Across Africa
                     </Typography>
@@ -41,7 +41,7 @@ function ImpactDriven() {
                     </Button>
                 </div>
                 <div className='w-full flex justify-end'>
-                    <div className='w-[400px] relative flex justify-end'>
+                    <div className='md:w-[400px] w-full relative flex justify-end'>
                         <div className='w-[80%] h-fit'>
                             <Image 
                                 src={impactMapImg}
@@ -49,7 +49,7 @@ function ImpactDriven() {
                                 className='w-full h-full'
                             />
                         </div>
-                        <div className='flex flex-col gap-2 absolute top-[65%] left-7 transform translate-y-1/2'>
+                        <div className='flex flex-col gap-2 absolute md:top-[65%] top-[75%] md:left-7 left-24 transform translate-y-1/2'>
                             <Typography
                                 typo="header-3-light"
                             >2.5 + Million</Typography>

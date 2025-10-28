@@ -24,7 +24,7 @@ function HomeMentorship() {
                     Mentor Africa&apos;s next business leaders
                 </Typography>
             </div>
-            <div className='w-[90%] h-fit mx-auto flex items-center gap-16'>
+            <div className='xl:w-[90%] w-full h-fit mx-auto flex items-center gap-16'>
                 <Image 
                     src={mentorsImg}
                     alt='Mentors image'
