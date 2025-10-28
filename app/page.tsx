@@ -1,4 +1,3 @@
-import Navbar from "@/components/shared/Navbar"
 import Hero from "@/components/home/Hero";
 import GreenEnergy from "@/components/home/green-energy";
 import OurServices from "@/components/home/our-services";
@@ -8,7 +7,6 @@ import HomeMentorship from "@/components/home/mentorship";
 import AlumniNetwork from "@/components/home/alumni-network";
 import Faqs from "@/components/home/faqs";
 import QuickLinks from "@/components/home/quick-links";
-import Footer from "@/components/shared/Footer";
 
 export default function Home() {
   return (

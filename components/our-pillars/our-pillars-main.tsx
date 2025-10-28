@@ -1,5 +1,5 @@
 'use client';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import React, { useEffect, useState } from 'react';
 import { motion, useAnimation, useInView } from 'framer-motion';
 import impactMainImg from '@/public/assets/images/impactImg.png';
@@ -25,6 +25,7 @@ function OurPillarsMain() {
     }
   };
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     const handleScrollEvent = () => {
       const offsets = tabs.map(tab => {
@@ -108,7 +109,7 @@ function AnimatedSection({
   title: string;
   subtitle: string;
   text: string;
-  image: any;
+  image: StaticImageData;
   reverse?: boolean;
 }) {
   const ref = React.useRef(null);

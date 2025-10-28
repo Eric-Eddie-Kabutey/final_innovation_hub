@@ -13,7 +13,7 @@ function AboutPillars() {
             >Our Pillars</Typography>
             <div className='w-full py-6 grid grid-cols-4'>
                 {aboutPillars.map((data, index) => (
-                    <div className='py-24 px-8 flex flex-col gap-8 border'>
+                    <div key={data.id} className='py-24 px-8 flex flex-col gap-8 border'>
                         <div className='w-16 h-fit mx-auto'>
                             <Image 
                                 src={data.icon}

@@ -14,9 +14,9 @@ function AboutUsMain() {
             <div className='max-w-[800px] flex flex-col items-center gap-2'>
                 <Typography
                     typo="body-large-medium"
-                    className='text-app-primary'
+                    className='text-app-primary uppercase'
                 >
-                    DEMOCRATISING LUCK
+                    About us
                 </Typography>
                 <Typography
                     typo="header-2-medium"
