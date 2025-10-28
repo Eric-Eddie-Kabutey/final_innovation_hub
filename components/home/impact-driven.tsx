@@ -9,7 +9,7 @@ import { ChevronRight } from 'lucide-react';
 
 function ImpactDriven() {
   return (
-    <div className='w-full py-24'>
+    <div className='w-full sm:py-24 py-16'>
         <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto flex lg:items-start items-center xl:gap-32 lg:gap-16 gap-8'>
             <div className='md:block hidden xl:w-[550px] w-[450px] h-fit'>
                 <Image 
@@ -49,7 +49,7 @@ function ImpactDriven() {
                                 className='w-full h-full'
                             />
                         </div>
-                        <div className='flex flex-col gap-2 absolute md:top-[65%] top-[75%] md:left-7 left-24 transform translate-y-1/2'>
+                        <div className='flex flex-col gap-2 absolute md:top-[65%] xs:top-[75%] top-[65%] md:left-7 xs:left-24 left-5 transform translate-y-1/2'>
                             <Typography
                                 typo="header-3-light"
                             >2.5 + Million</Typography>

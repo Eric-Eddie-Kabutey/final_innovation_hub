@@ -7,7 +7,7 @@ import { Button } from '../ui/button';
 
 function AlumniNetwork() {
   return (
-    <div className='w-full py-20'>
+    <div className='w-full sm:py-20 py-16'>
         <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto bg-white flex flex-col gap-6'>
             <div className='md:max-w-[60%] mx-auto flex flex-col items-center gap-2'>
                 <Typography

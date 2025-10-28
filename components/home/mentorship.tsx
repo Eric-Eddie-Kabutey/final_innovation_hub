@@ -8,9 +8,9 @@ import { Button } from '../ui/button';
 
 function HomeMentorship() {
   return (
-    <div className='mentor-section w-full py-32'>
+    <div className='mentor-section w-full sm:py-32 py-20'>
         <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto flex flex-col gap-20'>
-            <div className='w-[600px] mx-auto flex flex-col gap-3 text-white'>
+            <div className='sm:w-[600px] w-full mx-auto flex flex-col gap-3 text-white'>
                 <Typography
                     typo="body-large-medium"
                     className=''
@@ -19,7 +19,7 @@ function HomeMentorship() {
                 </Typography>
                 <Typography
                     typo="header-1-medium"
-                    className='!leading-[4.5rem]'
+                    className='sm:!leading-[4.5rem]'
                 >
                     Mentor Africa&apos;s next business leaders
                 </Typography>

@@ -30,7 +30,7 @@ export default function Navbar() {
                                     alt="Innovation logo"
                                 />
                             </div>
-                            <div className="flex items-center gap-">
+                            <div className="hidden xs:flex items-center gap-">
                                 <Typography
                                     typo="header-6-medium"
                                     className="uppercase text-gray-500"
@@ -79,25 +79,25 @@ export default function Navbar() {
                                         href="/"
                                         className="flex items-center gap-2 text-xl font-bold"
                                     >
-                                        <span>KtechHub</span>
+                                        <span>Innovation Hub</span>
                                     </Link>
                                     <Link
-                                        href="/"
+                                        href="/about-us"
                                         className="text-muted-foreground hover:text-foreground"
                                     >
-                                        Getting Started
+                                        Who we are
                                     </Link>
                                     <Link
-                                        href="/"
+                                        href="/our-pillars"
                                         className="text-muted-foreground hover:text-foreground"
                                     >
-                                        Components
+                                        Our Pillars
                                     </Link>
                                     <Link
                                         href="/contact-us"
                                         className="text-muted-foreground hover:text-foreground"
                                     >
-                                        Contact Us
+                                        Resources
                                     </Link>
                                 </nav>
                             </SheetContent>

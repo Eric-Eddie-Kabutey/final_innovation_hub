@@ -30,6 +30,12 @@ const links: { title: string; href: string; description: string, links?: { title
       "A modal dialog that interrupts the user with important content and expects a response.",
   },
   {
+    title: "Events",
+    href: "/events",
+    description:
+      "A modal dialog that interrupts the user with important content and expects a response.",
+  },
+  {
     title: "Resources",
     href: "/resources",
     description:
@@ -50,12 +56,6 @@ const links: { title: string; href: string; description: string, links?: { title
       {
         title: "Tools",
         href: "/resources/tools",
-        description:
-          "Styles for headings, paragraphs, lists...etc",
-      },
-      {
-        title: "Events",
-        href: "/resources/events",
         description:
           "Styles for headings, paragraphs, lists...etc",
       },

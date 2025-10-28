@@ -8,7 +8,7 @@ import Image from 'next/image';
 
 function DemocratisingLuck() {
   return (
-    <div className='w-full py-20'>
+    <div className='w-full sm:py-20 py-12'>
         <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto flex flex-col items-center gap-6'>
             <div className='max-w-[800px] flex flex-col items-center gap-2'>
                 <Typography

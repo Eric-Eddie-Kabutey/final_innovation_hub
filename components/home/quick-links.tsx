@@ -27,7 +27,7 @@ function QuickLinks() {
                 >
                     Quick Links
                 </Typography>
-                <div className='w-full grid grid-cols-2 lg:gap-12 gap-6'>
+                <div className='w-full grid sm:grid-cols-2 lg:gap-12 gap-6'>
                     {quick_links.map(data => (
                         <Card
                             key={data.id}

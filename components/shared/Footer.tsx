@@ -9,7 +9,7 @@ import logo from "@/public/assets/images/logo_tef.png"
 export default function Footer() {
     return (
         <div className="w-full py-12">
-            <section className="max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto flex justify-between gap-12">
+            <section className="max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto flex xs:flex-row flex-col justify-between gap-12">
                 <div className=" md:w-[35%] flex flex-col gap-4">
                     {/* <RedLinesBackground /> */}
                     <Link

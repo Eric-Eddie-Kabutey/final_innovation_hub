@@ -42,7 +42,7 @@ function OurServices() {
   const [selectedId, setSelectedId] = useState(energy_services[0].id)
 
   return (
-    <div className='w-full pt-32 pb-16'>
+    <div className='w-full sm:pt-32 pt-16 sm:pb-16 pb-10'>
       <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto flex flex-col gap-8'>
         <div className='flex flex-col gap-4'>
           <Typography
@@ -62,12 +62,12 @@ function OurServices() {
           </div>
         </div>
 
-        <div className='w-full xl:py-8 py-6 grid lg:grid-cols-4 grid-cols-2 gap-6'>
+        <div className='w-full xl:py-8 sm:py-6 xs:py-4 py-8 grid lg:grid-cols-4 xs:grid-cols-2 gap-6'>
           {energy_services.map((data, index) => (
             <Card
               key={data.id}
               onClick={() => setSelectedId(data.id)}
-              className={`xl:py-6 py-4 xl:px-2 flex flex-col items-center gap-3 bg-[#f5f3ed] border-2 transition-all duration-300 ease-out cursor-pointer 
+              className={`xl:py-6 py-4 xl:px-2 flex flex-col items-center sm:gap-3 xs:gap-0 gap-4 bg-[#f5f3ed] border-2 transition-all duration-300 ease-out cursor-pointer 
                 ${selectedId === data.id ? 'border-blue-500 shadow-lg scale-[1.02]' : 'border-transparent hover:shadow-lg'}
               `}
             >
