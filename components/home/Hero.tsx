@@ -17,14 +17,12 @@ function HomeHero() {
                         typo="header-1-semibold"
                         className='2xl:!leading-none !leading-tight !font-bold'
                     >
-                        Powering the future of clean energy
+                        Naturing Ideas - Into World Changing Solutions
                     </Typography>
                     <Typography
                         typo="body-large-light"
                     >
-                        Integrating renewable energy infrastructure, innovation software and 
-                        flexible services to drive energy transition, resilience & economic 
-                        growth in Africa
+                        We connect visionaries, innovators, and entrepreneurs with the tools, mentors, and opportunities they need to make an impact in Africa and Globally.
                     </Typography>
                     <div className='md:hidden block relative'>
                         <div className='w-full h-fit'>
