@@ -42,13 +42,22 @@ function HomeHero() {
                                 typo="header-6-medium"
                             >Shapping the Future of Renewable Energy</Typography>
                         </button>
-                    </div>
-                    <Button
-                        variant="primary"
-                        className='w-fit px-8 py-4'
-                    >
-                        Get Started
-                    </Button>
+                      </div>
+                      <div className="flex items-center gap-4">                          
+                            <Button
+                                variant="primary"
+                                className='w-fit px-8 py-4'
+                            >
+                                Get Started
+                            </Button>
+                            
+                            <Button
+                                variant="outline"
+                                className='w-fit px-8 py-4'
+                            >
+                                Contact Us
+                            </Button>
+                      </div>
                 </div>
                 <div className='text-gray-400'>
                     <ArrowDown size={60} />
