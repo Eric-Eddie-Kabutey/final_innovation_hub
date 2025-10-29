@@ -6,7 +6,7 @@ import logo from '@/public/assets/images/logo_tef.png'
 
 export default function Footer() {
 	return (
-		<div className='w-full pt-12 pb-4'>
+		<div className='w-full pt-12 pb-4'>			
 			<section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto'>
 				{/* top footer */}
 				<div className='flex md:flex-row flex-col justify-between gap-12'>
