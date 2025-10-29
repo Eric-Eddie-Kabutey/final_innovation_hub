@@ -40,7 +40,7 @@ export default function Footer() {
 
 						<Typography
 							typo='header-1-semibold'
-							className='text-black 2xl:!text-[6rem]  lg:!text-[6.7rem] md:!text-[4.7rem] sm:!text-[6rem] xs:!text-[4.5rem] !text-[3.5rem] font-semibold uppercase !leading-normal'>
+							className='text-black 2xl:!text-[7.2rem]  lg:!text-[6.7rem] md:!text-[4.7rem] sm:!text-[6rem] xs:!text-[4.5rem] !text-[3.5rem] font-semibold uppercase !leading-normal'>
 							INNOVATORS
 						</Typography>
 					</div>
