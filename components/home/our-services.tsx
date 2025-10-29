@@ -55,9 +55,9 @@ function OurServices() {
           <div className='w-[70%] flex gap-12'>
             <Typography
               typo="header-1-medium"
-              className='max-w-[300px] !leading-[4rem]'
+              className='max-w-[600px] !leading-[4rem]'
             >
-              Glance through What We Exist For
+              Glance through <br /> What We <span className='text-app-primary'>Exist</span> For
             </Typography>
           </div>
         </div>
@@ -81,7 +81,7 @@ function OurServices() {
 
               <CardContent className='flex flex-col items-center gap-1'>
                 <Typography
-                  typo="header-5-semibold"
+                  typo="header-6-semibold"
                   className='font-bold'
                 >
                   {data.title}
@@ -101,7 +101,7 @@ function OurServices() {
           variant="primary"
           className='w-fit mx-auto'
         >
-          Learn more
+          Explore Our Pillars
           <ArrowRight />
         </Button>
       </section>

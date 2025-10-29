@@ -17,7 +17,7 @@ function GreenEnergy() {
                         className='w-full h-full object-cover rounded-[2rem]'
                     />
                 </div>
-                <div className='xs:block hidden w-[350px] absolute xl:-bottom-[5rem] -bottom-[2rem] right-0 p-12 bg-[#30584c] rounded-xl'>
+                <div className='xs:block hidden w-[350px] absolute xl:-bottom-[5rem] -bottom-[2rem] right-0 p-12 bg-[#ff0000]/40 rounded-xl'>
                     <Typography
                         typo="header-3-medium"
                         className='text-white'

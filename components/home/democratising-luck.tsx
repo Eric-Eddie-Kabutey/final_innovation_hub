@@ -3,7 +3,7 @@ import React from 'react'
 import Typography from '../shared/typography'
 import { Button } from '../ui/button';
 import { ChevronRight } from 'lucide-react';
-import levelingImg from "@/public/assets/images/leveling-Biuf2Qjx.png";
+import levelingImg from "@/public/assets/images/Accessibility-and-Inclusion.webp";
 import Image from 'next/image';
 
 function DemocratisingLuck() {
@@ -15,13 +15,16 @@ function DemocratisingLuck() {
                     typo="body-large-medium"
                     className='text-app-primary'
                 >
-                    DEMOCRATISING LUCK
+                    Accessibility and Inclusion
                 </Typography>
                 <Typography
                     typo="header-2-medium"
                     className='text-center'
-                >
-                    We are <span className='text-app-primary'>leveling</span> the playing field for every ambitious dreamer
+                  >
+                      We Believe That Innovation Should Be
+                      <span className='text-app-primary'> Accessible</span> To Everyone
+                      
+                      
                 </Typography>
                 <Button
                     variant="ghost"

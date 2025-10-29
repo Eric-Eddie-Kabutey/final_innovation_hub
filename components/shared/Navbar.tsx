@@ -46,7 +46,7 @@ export default function Navbar() {
                     <NavbarRight>
                         <Navigation />
                         <Button variant="primary">
-                            <Link href="/">Aid Now</Link>
+                            <Link href="/">Donate Now</Link>
                         </Button>
                         {/* <DropdownMenu>
                             <DropdownMenuTrigger asChild>
