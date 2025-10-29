@@ -37,8 +37,8 @@ function DemocratisingLuck() {
             <div className='lg:w-[800px] w-full h-fit'>
                 <Image 
                     src={levelingImg}
-                    alt='Leveling image'
-                    className='w-full h-full'
+                    alt='Leveling image'                    
+                    className='w-full h-full rounded-lg'
                 />
             </div>
         </section>
