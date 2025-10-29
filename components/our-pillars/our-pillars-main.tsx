@@ -14,6 +14,7 @@ function OurPillarsMain() {
     { id: 'impact', label: 'Impact Driven' },
     { id: 'innovation', label: 'Innovation' },
     { id: 'mentorship', label: 'Mentorship' },
+    { id: 'productivity', label: 'Productivity' },
   ];
 
   const [activeTab, setActiveTab] = useState('impact');
@@ -92,6 +93,16 @@ function OurPillarsMain() {
         subtitle='Building Future Leaders Through Guidance and Mentorship'
         text='Our mentorship programs nurture leadership, creativity, and self-confidence. We connect aspiring young Africans with experts who guide them to reach their full potential. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur doloremque suscipit ullam id iure facilis iusto eius debitis dolor ipsa consequatur deserunt laborum maxime eligendi atque corrupti facere ipsum maiores cupiditate, quisquam qui libero blanditiis sed. Dignissimos, maxime hic dicta in sunt optio consectetur soluta minima molestias eum modi consequatur quisquam, officiis nemo est neque architecto et voluptate atque ipsa maiores facere illum. Voluptate, architecto. Minus enim quae repellendus ad fugiat adipisci tempora ipsum tempore eligendi deleniti id esse in quidem odit porro iusto asperiores sequi error, exercitationem assumenda natus. Recusandae a facere fugit praesentium possimus eum, est doloribus? Voluptatibus.'
       />
+
+      <AnimatedSection
+        id='productivity'
+        reverse={true}
+        image={innovationImg}
+        title='Productivity'
+        subtitle='Transforming Africa Through Technology and Creativity'
+        text='We harness innovation to solve real challenges. From digital solutions to creative programs, our work inspires new ways of thinking, creating sustainable change across the continent.'
+      />
+
     </div>
   );
 }
