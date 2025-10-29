@@ -36,23 +36,20 @@ export default function Footer() {
 
                             </div>
                         </Link>
-                        <div className="w-fit flex flex-col items-center text-gray-600">
-                            <Typography
-                                typo="header-5-medium"
-                                className="uppercase text-center"
-                            >Empowering</Typography>
-                            <Typography
-                                typo="header-3-medium"
-                                className="uppercase text-center"
-                            >African</Typography>
-                            <Typography
-                                typo="header-5-medium"
-                                className="uppercase text-center"
-                            >Entrepreneurs</Typography>
-                        </div>
+                        
                     </div>
                     <div className="flex-1">
-                       EMPOWERING AFRICAN ENTREPRENEURS!
+                       
+                        
+
+                        <Typography
+                typo="header-1-semibold"
+                className='text-black 2xl:!text-[4rem]  sm:!text-[6rem] xs:!text-[4.5rem] !text-[3.5rem] font-semibold uppercase !leading-normal'
+                        >
+                            {/* xl:!text-[12rem] lg:!text-[10rem] md:!text-[7rem] */}
+                            EMPOWERING AFRICAN
+                            <span className="font-bold"> INNOVATORS</span>
+            </Typography>
                     </div>
                 </div>
                 {/* divider */}
