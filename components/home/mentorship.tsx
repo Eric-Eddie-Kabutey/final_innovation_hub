@@ -24,13 +24,15 @@ function HomeMentorship() {
                     Mentor Africa&apos;s next business leaders
                 </Typography>
             </div>
-            <div className='xl:w-[90%] w-full h-fit mx-auto flex items-center gap-16'>
-                <Image 
-                    src={mentorsImg}
-                    alt='Mentors image'
-                    className='w-full h-full'
-                />
-            </div>
+            <div className='relative xl:w-[90%] w-full mx-auto aspect-video lg:aspect-[21/9] rounded-lg overflow-hidden'>
+    <Image 
+        src={mentorsImg}
+        alt='Mentors image'
+        fill // 2. Use the 'fill' prop
+        className='object-cover' // 3. Use 'object-cover' to fill without distortion
+        sizes="(max-width: 1280px) 90vw, 100vw" // 4. (Best Practice) Add sizes prop
+    />
+</div>
             <Button
                 variant="primary"
                 className='w-fit mx-auto'
