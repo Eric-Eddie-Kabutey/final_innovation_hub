@@ -1,6 +1,6 @@
-import alumni1 from "@/public/assets/images/alumni_images/1.png";
-import alumni2 from "@/public/assets/images/alumni_images/2.png";
-import alumni3 from "@/public/assets/images/alumni_images/3.png";
+import amen_benson from "@/public/assets/images/alumni_images/amen_benson.webp";
+import daniel_narh from "@/public/assets/images/alumni_images/daniel_narh.webp";
+import ofili_img from "@/public/assets/images/alumni_images/ofili_img.webp";
 import alumni4 from "@/public/assets/images/alumni_images/4.png";
 import alumni5 from "@/public/assets/images/alumni_images/5.png";
 import alumni6 from "@/public/assets/images/alumni_images/6.png";
@@ -10,7 +10,7 @@ import gambiaFlag from "@/public/assets/images/country_flags/gambia.png"
 import kenyaFlag from "@/public/assets/images/country_flags/kenya.png"
 import ugandaFlag from "@/public/assets/images/country_flags/uganda.png"
 
-export const alumniImgs = [alumni1, alumni2, alumni3, alumni4, alumni5, alumni6]
+export const alumniImgs = [amen_benson, daniel_narh, ofili_img, alumni4, alumni5, alumni6]
 
 export const countryFlags = [ghanaFlag, gambiaFlag, kenyaFlag, ugandaFlag];
 
