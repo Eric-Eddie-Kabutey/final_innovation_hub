@@ -1,10 +1,10 @@
 'use client';
 import React, { useState } from 'react'
 import Typography from '../shared/typography';
-import hardwareIcon from "@/public/assets/icons/hardware_icon.png"
-import aiIcon from "@/public/assets/icons/ai_icon.png"
-import gisIcon from "@/public/assets/icons/gis_icon.png"
-import remoteIcon from "@/public/assets/icons/remote_icon.png"
+import startupInnovation from "@/public/assets/icons/startup-incubation.png"
+import innovationLabs from "@/public/assets/icons/innovation-labs.png"
+import corporateInnovationPrograms from "@/public/assets/icons/corporate-innovation-programs.png"
+import communityAndEvents from "@/public/assets/icons/community-and-events.png"
 import { Card, CardContent, CardHeader } from '../ui/card';
 import Image from 'next/image';
 import { Button } from '../ui/button';
@@ -13,27 +13,27 @@ import { ArrowRight } from 'lucide-react';
 const energy_services = [
   {
     id: "1",
-    icon: hardwareIcon,
-    title: "Hardware",
-    description: `We provide Tier 1 hardware from best in class OEMs`,
+    icon: startupInnovation,
+    title: "Startup Incubation",
+    description: `From idea validation to product launch, we offer tailored mentorship, funding guidance, and workspace to help your startup thrive.`,
   },
   {
     id: "2",
-    icon: gisIcon,
-    title: "GIS and AR",
-    description: `We deploy GIS and AR-enabled energy assessment technologies`,
+    icon: innovationLabs,
+    title: "Innovation Labs",
+    description: `Hands-on access to cutting-edge tools, prototyping equipment, and collaborative workshops to accelerate your R&D process.`,
   },
   {
     id: "3",
-    icon: aiIcon,
-    title: "AI and ML",
-    description: `We develop AI-driven energy management systems, and utilise ML for maintenance, and support`,
+    icon: corporateInnovationPrograms,
+    title: "Corporate Innovation Programs",
+    description: `Custom programs to help established companies adapt, innovate, and stay competitive in a fast-changing world.`,
   },
   {
     id: "4",
-    icon: remoteIcon,
-    title: "Remote Monitoring",
-    description: `We enable remote site monitoring and system control`,
+    icon: communityAndEvents,
+    title: "Community & Events",
+    description: `Meet investors, industry leaders, and like-minded innovators through curated networking events and pitch nights.`,
   },
 ]
 
@@ -49,7 +49,7 @@ function OurServices() {
             typo="body-medium-medium"
             className='uppercase'
           >
-            Our Services
+            Our Stand & Goals
           </Typography>
 
           <div className='w-[70%] flex gap-12'>
@@ -57,7 +57,7 @@ function OurServices() {
               typo="header-1-medium"
               className='max-w-[300px] !leading-[4rem]'
             >
-              Energy as a Service
+              Glance through What We Exist For
             </Typography>
           </div>
         </div>
