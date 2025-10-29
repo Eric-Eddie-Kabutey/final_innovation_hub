@@ -5,6 +5,13 @@ import { alumniImgs, countryFlags } from '@/constants';
 import Image from 'next/image';
 import { Button } from '../ui/button';
 
+// Data for the new text cards
+const cardData = [
+  { text: "You", bgColor: "bg-[#53565a]" },
+  { text: "Are", bgColor: "bg-red-700" },
+  { text: "Next", bgColor: "bg-[#53565a]" },
+];
+
 function AlumniNetwork() {
   return (
     <div className='w-full sm:py-20 py-16'>
@@ -23,19 +30,40 @@ function AlumniNetwork() {
                     Join a network of over 21,000+ TEF Alumni driving impact across <span className='countries-text-clip'> 54 countries</span>
                 </Typography>
             </div>
-            <div className='w-full py-8 grid grid-cols-3'>
-                {alumniImgs.map((data, index) => (
-                    <div
-                        key={`Alumni ${index+1}`} 
-                        className='w-full h-fit'>
-                            <Image 
-                                src={data}
-                                alt='Alumni image'
-                                className='w-full h-full'
-                            />
-                        </div>
-                ))}
-            </div>
+             <div className='w-[80%] mx-auto py-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2'>
+      
+      {/* Render the first three images */}
+      {alumniImgs.slice(0, 3).map((data, index) => (
+        <div
+          key={`Alumni-Image-${index}`}
+          className='relative w-full aspect-square' 
+        >
+          <Image 
+            src={data}
+            alt={`Alumni image ${index + 1}`}
+            fill
+            className='object-cover rounded-lg' 
+          />
+        </div>
+      ))}
+
+      {/* Render the three custom text cards */}
+      {cardData.map((card, index) => (
+        <div
+          key={`Card-${index}`}
+          className={`
+            w-full aspect-square rounded-lg
+            flex items-center justify-center
+            ${card.bgColor}
+          `}
+        >
+          <span className="text-white text-4xl lg:text-5xl font-extrabold">
+            {card.text}
+          </span>
+        </div>
+      ))}
+
+    </div>
             <div className='md:w-[20%] w-[40%] mx-auto py-8 grid grid-cols-4 gap-6'>
                 {countryFlags.map((data, index) => (
                     <div
