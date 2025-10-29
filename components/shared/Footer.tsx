@@ -50,16 +50,22 @@ export default function Footer() {
 				{/* bottom footer */}
 				<div className='flex items-center justify-between flex-col md:flex-row text-[16px] font-light'>
 					{/* socials */}
-					<div className='flex flex-col md:flex-row items-center gap-4'>
-						<Link href='/'>Facebook</Link>
-						<Link href='/'>Instagram</Link>
+					<div className='flex flex-row md:flex-col items-center gap-8 mb-2 md:mb-0'>
+						<div className='flex md:flex-row gap-4'>
+							<Link href='/'>Facebook</Link>
+							<Link href='/'>Instagram</Link>
+						</div>
+
+						<div className='md:hidden'>
+							<Link href='/'>Privacy Policy</Link>
+						</div>
 					</div>
 					{/* copy right */}
 					<div className='flex flex-col md:flex-row items-center gap-4'>
 						© 2025 All rights reversed INNOVATIONHUB
 					</div>
 					{/* terms & condition */}
-					<div className=''>
+					<div className='hidden md:block'>
 						<Link href='/'>Privacy Policy</Link>
 					</div>
 				</div>
