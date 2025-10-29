@@ -52,7 +52,7 @@ export default function Footer() {
                         </div>
                     </div>
                     <div className="flex-1">
-                       EMPOWERING AFRICAN ENTREPRENEURS
+                       EMPOWERING AFRICAN ENTREPRENEURS!
                     </div>
                 </div>
                 {/* divider */}
