@@ -68,7 +68,7 @@ function OurServices() {
               key={data.id}
               onClick={() => setSelectedId(data.id)}
               className={`xl:py-6 py-4 xl:px-2 flex flex-col items-center sm:gap-3 xs:gap-0 gap-4 bg-[#f5f3ed] border-2 transition-all duration-300 ease-out cursor-pointer 
-                ${selectedId === data.id ? 'border-blue-500 shadow-lg scale-[1.02]' : 'border-transparent hover:shadow-lg'}
+                ${selectedId === data.id ? 'border-app-primary shadow-lg scale-[1.02]' : 'border-transparent hover:shadow-lg'}
               `}
             >
               <CardHeader>
