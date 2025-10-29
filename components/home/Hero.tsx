@@ -16,8 +16,12 @@ function HomeHero() {
                     <Typography
                         typo="header-1-semibold"
                         className='2xl:!leading-none !leading-tight !font-bold'
-                    >
-                        Naturing Ideas - Into World Changing Solutions
+                      >
+                          Naturing Ideas
+                          <br />
+                          Into Practical
+                          <br />
+                         Solutions
                     </Typography>
                     <Typography
                         typo="body-large-light"
