@@ -30,10 +30,10 @@ export default function Footer() {
 							</div>
 						</Link>
 					</div>
-					<div className='flex-1 flex flex-col'>
+					<div className='flex-1 flex flex-col gap-0 items-center'>
 						<Typography
 							typo='header-1-semibold'
-							className='text-black 2xl:!text-[4rem] lg:!text-[3.7rem] md:!text-[2.5rem]  sm:!text-[3rem] xs:!text-[2.3rem] !text-[2rem] font-semibold uppercase !leading-normal'>
+							className='text-gray-400 2xl:!text-[4rem] lg:!text-[3.7rem] md:!text-[2.5rem]  sm:!text-[3rem] xs:!text-[2.3rem] !text-[2rem] font-semibold uppercase !leading-normal'>
 							{/* xl:!text-[12rem] lg:!text-[10rem] md:!text-[7rem] */}
 							EMPOWERING AFRICAN
 						</Typography>
