@@ -83,7 +83,7 @@ const InfoSection: FC<InfoSectionProps> = ({
             className="lg:w-1/2 w-full flex justify-end items-end"
           >
             {/* The image is now smaller and has a fixed aspect ratio */}
-            <div className="relative w-full max-w-md lg:max-w-lg aspect-[4/3]">
+            <div className="relative w-full max-w-[262px] lg:max-w-[322px] aspect-[4/3] -mb-56">
                 <Image
                 src={imageSrc}
                 alt={imageAlt}
