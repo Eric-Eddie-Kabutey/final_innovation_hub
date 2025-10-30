@@ -8,6 +8,7 @@ import mentorshipImg from '@/public/assets/images/impactImg.png';
 import Typography from '../shared/typography';
 import { Button } from '../ui/button';
 import { ChevronRight, Play } from 'lucide-react';
+import Link from 'next/link';
 
 function OurPillarsMain() {
   const tabs = [
@@ -74,6 +75,7 @@ function OurPillarsMain() {
         title='Impact Driven'
         subtitle='Celebrating a Decade+ of Impact Across Africa'
         text='We have empowered thousands of individuals and communities through our projects. From rural development to youth empowerment, we are committed to making a measurable difference. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur doloremque suscipit ullam id iure facilis iusto eius debitis dolor ipsa consequatur deserunt laborum maxime eligendi atque corrupti facere ipsum maiores cupiditate, quisquam qui libero blanditiis sed. Dignissimos, maxime hic dicta in sunt optio consectetur soluta minima molestias eum modi consequatur quisquam, officiis nemo est neque architecto et voluptate atque ipsa maiores facere illum. Voluptate, architecto. Minus enim quae repellendus ad fugiat adipisci tempora ipsum tempore eligendi deleniti id esse in quidem odit porro iusto asperiores sequi error, exercitationem assumenda natus. Recusandae a facere fugit praesentium possimus eum, est doloribus? Voluptatibus.'
+        link='impact'
       />
 
       <AnimatedSection
@@ -83,6 +85,7 @@ function OurPillarsMain() {
         title='Innovation'
         subtitle='Transforming Africa Through Technology and Creativity'
         text='We harness innovation to solve real challenges. From digital solutions to creative programs, our work inspires new ways of thinking, creating sustainable change across the continent.'
+        link='innovation'
       />
 
       <AnimatedSection
@@ -92,6 +95,7 @@ function OurPillarsMain() {
         title='Mentorship'
         subtitle='Building Future Leaders Through Guidance and Mentorship'
         text='Our mentorship programs nurture leadership, creativity, and self-confidence. We connect aspiring young Africans with experts who guide them to reach their full potential. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur doloremque suscipit ullam id iure facilis iusto eius debitis dolor ipsa consequatur deserunt laborum maxime eligendi atque corrupti facere ipsum maiores cupiditate, quisquam qui libero blanditiis sed. Dignissimos, maxime hic dicta in sunt optio consectetur soluta minima molestias eum modi consequatur quisquam, officiis nemo est neque architecto et voluptate atque ipsa maiores facere illum. Voluptate, architecto. Minus enim quae repellendus ad fugiat adipisci tempora ipsum tempore eligendi deleniti id esse in quidem odit porro iusto asperiores sequi error, exercitationem assumenda natus. Recusandae a facere fugit praesentium possimus eum, est doloribus? Voluptatibus.'
+        link='mentorship'
       />
 
       <AnimatedSection
@@ -101,6 +105,7 @@ function OurPillarsMain() {
         title='Productivity'
         subtitle='Transforming Africa Through Technology and Creativity'
         text='We harness innovation to solve real challenges. From digital solutions to creative programs, our work inspires new ways of thinking, creating sustainable change across the continent.'
+        link='productivity'
       />
 
     </div>
@@ -115,13 +120,15 @@ function AnimatedSection({
   text,
   image,
   reverse = false,
+  link,
 }: {
   id: string;
   title: string;
   subtitle: string;
   text: string;
   image: StaticImageData;
-  reverse?: boolean;
+    reverse?: boolean;
+    link: string;
 }) {
   const ref = React.useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-100px' });
@@ -173,9 +180,11 @@ function AnimatedSection({
           <Typography>
             {text}
           </Typography>
-          <Button variant='outline' className='w-fit flex justify-start hover:bg-transparent'>
+          <Button asChild variant='outline' className='w-fit flex justify-start hover:bg-transparent'>
+            <Link href={`${link}`}>
             Learn more
             <ChevronRight size={25} color='#fe0000' />
+            </Link>
           </Button>
         </div>
       </div>
