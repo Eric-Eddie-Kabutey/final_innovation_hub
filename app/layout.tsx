@@ -59,7 +59,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {/* dotted vertical -decorated line */}
-          <div className="absolute inset-0 flex justify-around opacity-30 pointer-events-none z-0">
+          <div className="absolute inset-0 flex justify-around opacity-30 pointer-events-none -z-5">
             {[...Array(6)].map((_, i) => (
               <div key={i} className="w-[2px] border-r border-dashed border-gray-400" />
             ))}
