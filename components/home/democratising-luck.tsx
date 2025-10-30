@@ -23,7 +23,7 @@ function DemocratisingLuck() {
 						<ChevronRight size={25} color='#fe0000' />
 					</Button>
 				</div>
-				<div className='relative overflow-hidden rounded-lg lg:w-[800px] w-full h-[320px] mx-auto'>
+				<div className='relative overflow-hidden rounded-3xl lg:w-[800px] w-full h-[370px] mx-auto'>
 					<Image
 						src={levelingImg}
 						alt='Leveling image'
