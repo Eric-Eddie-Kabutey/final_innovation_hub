@@ -16,6 +16,7 @@ function OurPillarsMain() {
     { id: 'innovation', label: 'Innovation' },
     { id: 'mentorship', label: 'Mentorship' },
     { id: 'productivity', label: 'Productivity' },
+    { id: 'leadership', label: 'Leadership' },
   ];
 
   const [activeTab, setActiveTab] = useState('impact');
@@ -106,6 +107,16 @@ function OurPillarsMain() {
         subtitle='Transforming Africa Through Technology and Creativity'
         text='We harness innovation to solve real challenges. From digital solutions to creative programs, our work inspires new ways of thinking, creating sustainable change across the continent.'
         link='productivity'
+      />
+
+      <AnimatedSection
+        id='leadership'
+        reverse={false}
+        image={innovationImg}
+        title='Leadership'
+        subtitle='Transforming Africa Through Technology and Creativity'
+        text='We harness innovation to solve real challenges. From digital solutions to creative programs, our work inspires new ways of thinking, creating sustainable change across the continent.'
+        link='leadership'
       />
 
     </div>
