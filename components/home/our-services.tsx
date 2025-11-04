@@ -1,10 +1,10 @@
 'use client';
 import React, { useState } from 'react'
 import Typography from '../shared/typography';
-import hardwareIcon from "@/public/assets/icons/hardware_icon.png"
-import aiIcon from "@/public/assets/icons/ai_icon.png"
-import gisIcon from "@/public/assets/icons/gis_icon.png"
-import remoteIcon from "@/public/assets/icons/remote_icon.png"
+import startupInnovation from "@/public/assets/icons/startup-incubation.png"
+import innovationLabs from "@/public/assets/icons/innovation-labs.png"
+import corporateInnovationPrograms from "@/public/assets/icons/corporate-innovation-programs.png"
+import communityAndEvents from "@/public/assets/icons/community-and-events.png"
 import { Card, CardContent, CardHeader } from '../ui/card';
 import Image from 'next/image';
 import { Button } from '../ui/button';
@@ -13,27 +13,27 @@ import { ArrowRight } from 'lucide-react';
 const energy_services = [
   {
     id: "1",
-    icon: hardwareIcon,
-    title: "Hardware",
-    description: `We provide Tier 1 hardware from best in class OEMs`,
+    icon: startupInnovation,
+    title: "Startup Incubation",
+    description: `From idea validation to product launch, we offer tailored mentorship, funding guidance, and workspace to help your startup thrive.`,
   },
   {
     id: "2",
-    icon: gisIcon,
-    title: "GIS and AR",
-    description: `We deploy GIS and AR-enabled energy assessment technologies`,
+    icon: innovationLabs,
+    title: "Innovation Labs",
+    description: `Hands-on access to cutting-edge tools, prototyping equipment, and collaborative workshops to accelerate your R&D process.`,
   },
   {
     id: "3",
-    icon: aiIcon,
-    title: "AI and ML",
-    description: `We develop AI-driven energy management systems, and utilise ML for maintenance, and support`,
+    icon: corporateInnovationPrograms,
+    title: "Corporate Innovation Programs",
+    description: `Custom programs to help established companies adapt, innovate, and stay competitive in a fast-changing world.`,
   },
   {
     id: "4",
-    icon: remoteIcon,
-    title: "Remote Monitoring",
-    description: `We enable remote site monitoring and system control`,
+    icon: communityAndEvents,
+    title: "Community & Events",
+    description: `Meet investors, industry leaders, and like-minded innovators through curated networking events and pitch nights.`,
   },
 ]
 
@@ -49,15 +49,15 @@ function OurServices() {
             typo="body-medium-medium"
             className='uppercase'
           >
-            Our Services
+            Our Stand & Goals
           </Typography>
 
           <div className='w-[70%] flex gap-12'>
             <Typography
               typo="header-1-medium"
-              className='max-w-[300px] !leading-[4rem]'
+              className='max-w-[600px] !leading-[4rem]'
             >
-              Energy as a Service
+              Glance through <br /> What We <span className='text-app-primary'>Exist</span> For
             </Typography>
           </div>
         </div>
@@ -68,7 +68,7 @@ function OurServices() {
               key={data.id}
               onClick={() => setSelectedId(data.id)}
               className={`xl:py-6 py-4 xl:px-2 flex flex-col items-center sm:gap-3 xs:gap-0 gap-4 bg-[#f5f3ed] border-2 transition-all duration-300 ease-out cursor-pointer 
-                ${selectedId === data.id ? 'border-blue-500 shadow-lg scale-[1.02]' : 'border-transparent hover:shadow-lg'}
+                ${selectedId === data.id ? 'border-app-primary shadow-lg scale-[1.02]' : 'border-transparent hover:shadow-lg'}
               `}
             >
               <CardHeader>
@@ -81,7 +81,7 @@ function OurServices() {
 
               <CardContent className='flex flex-col items-center gap-1'>
                 <Typography
-                  typo="header-5-semibold"
+                  typo="header-6-semibold"
                   className='font-bold'
                 >
                   {data.title}
@@ -101,7 +101,7 @@ function OurServices() {
           variant="primary"
           className='w-fit mx-auto'
         >
-          Learn more
+          Explore Our Pillars
           <ArrowRight />
         </Button>
       </section>

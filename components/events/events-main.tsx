@@ -8,7 +8,7 @@ import { Button } from '../ui/button';
 
 function EventsMain() {
   return (
-    <div className='w-full py-20 bg-[#f7f7f7]'>
+    <div id='upcoming-programmes' className='w-full py-20 bg-[#f7f7f7]'>
         <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto flex flex-col gap-12'>
             <div className='flex justify-between items-center gap-8'>
                 <div className='w-[60%] flex flex-col gap-6'>

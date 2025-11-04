@@ -1,10 +1,19 @@
 import EventsMain from '@/components/events/events-main'
-import React from 'react'
+import InternalEvents from '@/components/events/internal-events'
+import Tabs from '@/components/events/tabs'
+
 
 function Events() {
   return (
     <div>
-        <EventsMain />
+      {/* Event Tabs */}
+      <Tabs />
+      
+      {/* upcoming programs */}
+      <EventsMain />
+      
+      {/* internal events */}
+      <InternalEvents />
     </div>
   )
 }

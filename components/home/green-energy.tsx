@@ -17,7 +17,7 @@ function GreenEnergy() {
                         className='w-full h-full object-cover rounded-[2rem]'
                     />
                 </div>
-                <div className='xs:block hidden w-[350px] absolute xl:-bottom-[5rem] -bottom-[2rem] right-0 p-12 bg-[#30584c] rounded-xl'>
+                <div className='xs:block hidden w-[350px] absolute xl:-bottom-[5rem] -bottom-[2rem] right-0 p-12 bg-[#ff0000]/40 rounded-xl'>
                     <Typography
                         typo="header-3-medium"
                         className='text-white'
@@ -30,18 +30,18 @@ function GreenEnergy() {
                 <div className='flex flex-col gap-6'>
                     <Typography
                         typo="body-medium-medium"
-                    >GREEN ENERGY REVOLUTION</Typography>
+                    >welcome to</Typography>
                     <Typography
                         typo="header-1-semibold"
                         className='2xl:!leading-none !leading-tight !font-bold'
                     >
-                        Proven Renewable Energy Solutions
+                        Coders Clutch Innovation Hub
                     </Typography>
                     <Typography
                         typo="body-large-regular"
                         className='text-gray-500'
                     >
-                        We are a solar and renewable energy startup dedicated to providing sustainable innovative & customer-centric energy solutions for a greener Africa.
+                        We  provides a collaborative space where creative thinkers, startups, and industry experts unite to solve today’s most pressing challenges , from sustainability to emerging tech.
                     </Typography>
                 </div>
                 <div className='w-full flex justify-between gap-5'>

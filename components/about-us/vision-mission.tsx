@@ -6,7 +6,7 @@ function VisionMission() {
   return (
     <div className='w-full py-16'>
         <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto flex flex-col gap-12'>
-            <div className='w-[70%] flex justify-between items-center gap-12'>
+            <div className='w-[70%] flex justify-between items-start gap-12'>
                 <Typography
                     typo="header-4-semibold"
                     className='w-[35%]'
@@ -19,7 +19,7 @@ function VisionMission() {
                     </Typography>
                 </div>
             </div>
-            <div className='w-[70%] flex justify-between items-center gap-12'>
+            <div className='w-[70%] flex justify-between items-start gap-12'>
                 <Typography
                     typo="header-4-semibold"
                     className='w-[35%]'

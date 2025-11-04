@@ -50,7 +50,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased relative bg-white/100`}
       >
         <ThemeProvider
           attribute="class"
@@ -58,8 +58,15 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Navbar />
-          {children}
+          {/* dotted vertical -decorated line */}
+          <div className="absolute inset-0 flex justify-around opacity-30 pointer-events-none -z-5">
+            {[...Array(6)].map((_, i) => (
+              <div key={i} className="w-[2px] border-r border-dashed border-gray-400" />
+            ))}
+          </div>
+
+          <Navbar />          
+            {children}          
           <Footer />
           <Toaster />
         </ThemeProvider>

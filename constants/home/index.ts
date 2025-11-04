@@ -1,6 +1,6 @@
-import alumni1 from "@/public/assets/images/alumni_images/1.png";
-import alumni2 from "@/public/assets/images/alumni_images/2.png";
-import alumni3 from "@/public/assets/images/alumni_images/3.png";
+import amen_benson from "@/public/assets/images/alumni_images/amen_benson.webp";
+import daniel_narh from "@/public/assets/images/alumni_images/daniel_narh.webp";
+import ofili_img from "@/public/assets/images/alumni_images/ofili_img.webp";
 import alumni4 from "@/public/assets/images/alumni_images/4.png";
 import alumni5 from "@/public/assets/images/alumni_images/5.png";
 import alumni6 from "@/public/assets/images/alumni_images/6.png";
@@ -10,7 +10,7 @@ import gambiaFlag from "@/public/assets/images/country_flags/gambia.png"
 import kenyaFlag from "@/public/assets/images/country_flags/kenya.png"
 import ugandaFlag from "@/public/assets/images/country_flags/uganda.png"
 
-export const alumniImgs = [alumni1, alumni2, alumni3, alumni4, alumni5, alumni6]
+export const alumniImgs = [amen_benson, daniel_narh, ofili_img, alumni4, alumni5, alumni6]
 
 export const countryFlags = [ghanaFlag, gambiaFlag, kenyaFlag, ugandaFlag];
 
@@ -39,5 +39,38 @@ export const faqs = [
         id: 5,
         question: "How do I know which programme is right for me?",
         answer: `We recommend reviewing the programme descriptions to determine which one aligns best with your business stage, demographic, and focus area.`,
+    },
+]
+
+export const donate_faqs = [
+    {
+        id: "1",
+        question: "How much do I need to give?",
+        answer: `Donations of all sizes make an impact, there is no minimum requirement.`,
+    },
+    {
+        id: "2",
+        question: "What happens to my gift?",
+        answer: `100% of your donation goes directly to the area you choose whether it’s scholarships, research or supporting an Asustem program.`,
+    },
+    {
+        id: "3",
+        question: "What is the investment policy for the UniCamp Philanthropy Fund?",
+        answer: `As part of our deep commitment to sustainability, we are strengthening our ethical approach to philanthropic investments.`,
+    },
+    {
+        id: "4",
+        question: "How are gifts managed?",
+        answer: `All donations are managed with care and in compliance with all relevant government regulations.`,
+    },
+    {
+        id: "5",
+        question: "Is my gift tax deductible?",
+        answer: `Your gift can often be enhanced by a variety of tax breaks for charitable action.`,
+    },
+    {
+        id: "6",
+        question: "Can I give a gift from other locations?",
+        answer: `Yes. Contact us to talk about how you’d like to make an impact.`,
     },
 ]
