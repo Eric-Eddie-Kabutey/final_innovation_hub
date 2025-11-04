@@ -49,11 +49,11 @@ function    WaysToGive() {
                     typo="body-large-regular"
                     className='text-gray-500'
                 >Your support helps to educate leaders who make a difference in the world.</Typography>
-            </div>
-            <div className='w-full py-8 grid grid-cols-2 gap-10'>
+            </div>  
+            <div className='w-full mx-auto py-8 grid sm:grid-cols-2 gap-10 place-items-center'>
                 {donate_ways.map((data, index) => (
                     <div key={data.id} className='max-w-[350px] flex gap-6'>
-                        <div className='min-w-20 w-20 h-fit rounded-full'>
+                        <div className='lg:min-w-20 min-w-12 lg:w-20 w-12 h-fit rounded-full'>
                             <Image 
                                 src={data.icon}
                                 alt={`Donate-${index+1}`}

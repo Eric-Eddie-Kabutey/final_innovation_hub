@@ -9,8 +9,8 @@ const payment_cards = [masterCardImg, visaCardImg, paypalImg];
 
 function DonateMain() {
   return (
-    <div className='w-full py-36 bg-[#f8f8f8]'>
-        <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto flex flex-col gap-10'>
+    <div className='w-full lg:py-36 py-20 bg-[#f8f8f8]'>
+        <section className='max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto flex flex-col lg:gap-10 gap-6'>
             <div className='flex justify-center items-center gap-4'>
               <Button
                 variant="outline"
@@ -26,7 +26,7 @@ function DonateMain() {
               >$ 100</Button>
             </div>
               <Button
-                className='w-fit !px-8 !py-4 text-base mx-auto'
+                className='w-fit xs:!px-8 xs:!py-4 text-base mx-auto'
                 variant="primary"
               >Start Donation</Button>
               <div className='flex justify-center items-center gap-8'>
