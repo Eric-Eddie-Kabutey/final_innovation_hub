@@ -52,11 +52,11 @@ function    WaysToGive() {
             </div>
             <div className='w-full py-8 grid grid-cols-2 gap-10'>
                 {donate_ways.map((data, index) => (
-                    <div className='max-w-[350px] flex gap-6'>
+                    <div key={data.id} className='max-w-[350px] flex gap-6'>
                         <div className='min-w-20 w-20 h-fit rounded-full'>
                             <Image 
                                 src={data.icon}
-                                alt={`Donate`}
+                                alt={`Donate-${index+1}`}
                                 className='w-full h-full'
                             />
                         </div>
