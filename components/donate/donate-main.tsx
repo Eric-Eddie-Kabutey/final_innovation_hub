@@ -14,19 +14,19 @@ function DonateMain() {
             <div className='flex justify-center items-center gap-4'>
               <Button
                 variant="outline"
-                className='py-2'
+                className='py-2 bg-transparent'
               >$ 20</Button>
               <Button
                 variant="outline"
-                className='py-2'
+                className='py-2 bg-transparent'
               >$ 50</Button>
               <Button
                 variant="outline"
-                className='py-2'
+                className='py-2 bg-transparent'
               >$ 100</Button>
             </div>
               <Button
-                className='w-fit mx-auto'
+                className='w-fit !px-8 !py-4 text-base mx-auto'
                 variant="primary"
               >Start Donation</Button>
               <div className='flex justify-center items-center gap-8'>
