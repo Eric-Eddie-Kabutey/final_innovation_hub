@@ -18,7 +18,7 @@ const NotFound: FC = () => {
               href="/"
               className="bg-app-primary text-[18px] font-medium  p-[16px] rounded-[0.94rem] mt-6"
             >
-              Go Back to Home
+              Go Back to Home 
             </Link>
           </Button>
         </div>
