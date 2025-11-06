@@ -25,12 +25,12 @@ function AlumniNetwork() {
             <span className="countries-text-clip"> 54 countries</span>
           </Typography>
         </div>
-        <div className="w-[80%] mx-auto py-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
+        <div className="w-[90%] mx-auto py-8 grid grid-cols-3 gap-2">
           {/* Render the first three images */}
           {alumniImgs.slice(0, 3).map((data, index) => (
             <div
               key={`Alumni-Image-${index}`}
-              className="relative w-full aspect-square"
+              className="relative w-full aspect-square transition-transform duration-300 ease-out hover:scale-105"
             >
               <Image
                 src={data}
@@ -48,7 +48,7 @@ function AlumniNetwork() {
               className={`
             w-full aspect-square rounded-lg
             flex items-center justify-center
-            ${card.bgColor}
+            ${card.bgColor} transition-transform duration-300 ease-out hover:scale-105
           `}
             >
               <span
