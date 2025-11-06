@@ -1,5 +1,6 @@
 "use client";
-import React, { useRef } from "react";
+// Removed useRef import: import React, { useRef } from "react";
+import React from "react";
 import Typography from "../shared/typography";
 import { Button } from "../ui/button";
 import homeImg from "@/public/assets/images/home_img.png";

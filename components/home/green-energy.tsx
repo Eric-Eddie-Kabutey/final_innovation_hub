@@ -62,8 +62,8 @@ function GreenEnergy() {
             {/* Description text */}
             <Typography typo="body-large-regular" className="text-gray-500">
               We provides a collaborative space where creative thinkers,
-              startups, and industry experts unite to solve today's most
-              pressing challenges , from sustainability to emerging tech.
+              startups, and industry experts unite to solve **today&apos;s**
+              most pressing challenges , from sustainability to emerging tech.
             </Typography>
           </div>
 

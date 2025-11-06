@@ -7,7 +7,8 @@ import {
   NavbarLeft,
   NavbarRight,
 } from "@/components/ui/navbar";
-import { useRouter } from "next/navigation";
+// The 'useRouter' import is no longer needed if 'router' is not used:
+// import { useRouter } from "next/navigation";
 import {
   Sheet,
   SheetContent,
@@ -28,7 +29,7 @@ import Typography from "./typography";
 import { VisuallyHidden } from "@/components/ui/visually-hidden";
 
 export default function Navbar() {
-  const router = useRouter();
+  // Line 31 has been removed/commented out: const router = useRouter();
   const [isSheetOpen, setSheetOpen] = useState(false);
   return (
     <header className="max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto sticky top-6 z-50 -mb-4 px-4 border rounded-[1.2rem] shadow-md bg-white ">
@@ -61,19 +62,19 @@ export default function Navbar() {
               <Link href="/">Donate Now</Link>
             </Button>
             {/* <DropdownMenu>
-                            <DropdownMenuTrigger asChild>
-                                <Button variant="outline" size="icon">
-                                    <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-                                    <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
-                                    <span className="sr-only">Toggle theme</span>
-                                </Button>
-                            </DropdownMenuTrigger>
-                            <DropdownMenuContent align="end">
-                                <DropdownMenuItem onClick={() => setTheme("light")}>Light</DropdownMenuItem>
-                                <DropdownMenuItem onClick={() => setTheme("dark")}>Dark</DropdownMenuItem>
-                                <DropdownMenuItem onClick={() => setTheme("system")}>System</DropdownMenuItem>
-                            </DropdownMenuContent>
-                        </DropdownMenu> */}
+              <DropdownMenuTrigger asChild>
+                <Button variant="outline" size="icon">
+                  <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
+                  <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+                  <span className="sr-only">Toggle theme</span>
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="end">
+                <DropdownMenuItem onClick={() => setTheme("light")}>Light</DropdownMenuItem>
+                <DropdownMenuItem onClick={() => setTheme("dark")}>Dark</DropdownMenuItem>
+                <DropdownMenuItem onClick={() => setTheme("system")}>System</DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu> */}
             <Sheet open={isSheetOpen} onOpenChange={setSheetOpen}>
               <SheetTrigger asChild>
                 <Button
