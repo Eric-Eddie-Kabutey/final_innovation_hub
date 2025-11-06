@@ -1,8 +1,7 @@
 // app/not-found.tsx
 import Link from "next/link";
 import { FC } from "react";
-import Navbar from "../components/shared/Navbar";
-import Footer from "../components/shared/Footer";
+
 import { Button } from "@/components/ui/button";
 
 const NotFound: FC = () => {
@@ -13,6 +12,8 @@ const NotFound: FC = () => {
           <h1 className="text-6xl font-bold text-red-600">404</h1>
           <p className="text-2xl mt-4 mb-6">Oops... Page Not Found</p>
           <Button variant="default" size="lg" asChild>
+            className="bg-app-primary text-[18px] font-medium p-[16px]
+            rounded-[0.94rem] mt-6"
             <Link
               href="/"
               className="bg-app-primary text-[18px] font-medium  p-[16px] rounded-[0.94rem] mt-6"

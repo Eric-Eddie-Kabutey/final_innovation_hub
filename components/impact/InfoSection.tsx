@@ -98,10 +98,8 @@ const InfoSection: FC<InfoSectionProps> = ({
 					{/* --- Right Column: Image --- */}
 					<motion.div
 						variants={imageVariants}
-						// Use flexbox to position the image to the bottom right
 						className='lg:w-1/2 w-full flex justify-end items-end'>
-						{/* The image is now smaller and has a fixed aspect ratio */}
-						<div className='relative w-full max-w-[262px] lg:max-w-[322px] aspect-[4/3] -mb-64'>
+						<div className=' relative w-full max-w-[262px] lg:max-w-[452px] aspect-[4/3] -mb-64'>
 							<Image
 								src={imageSrc}
 								alt={imageAlt}

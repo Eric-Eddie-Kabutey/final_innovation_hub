@@ -4,7 +4,7 @@ import Typography from '../shared/typography'
 import { Button } from '../ui/button'
 import { ChevronRight } from 'lucide-react'
 import Image from 'next/image'
-import levelingImg from "@/public/assets/images/leveling-Biuf2Qjx.png";
+import levelingImg from "@/public/assets/images/about_leveling.jpg";
 
 
 function AboutUsMain() {
@@ -36,7 +36,7 @@ function AboutUsMain() {
                 <Image
                     src={levelingImg}
                     alt='Leveling image'
-                    className='w-full h-full'
+                    className='w-full h-full rounded-2xl'
                 />
             </div>
         </section>

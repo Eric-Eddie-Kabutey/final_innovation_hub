@@ -41,3 +41,36 @@ export const faqs = [
         answer: `We recommend reviewing the programme descriptions to determine which one aligns best with your business stage, demographic, and focus area.`,
     },
 ]
+
+export const donate_faqs = [
+    {
+        id: "1",
+        question: "How much do I need to give?",
+        answer: `Donations of all sizes make an impact, there is no minimum requirement.`,
+    },
+    {
+        id: "2",
+        question: "What happens to my gift?",
+        answer: `100% of your donation goes directly to the area you choose whether it’s scholarships, research or supporting an Asustem program.`,
+    },
+    {
+        id: "3",
+        question: "What is the investment policy for the UniCamp Philanthropy Fund?",
+        answer: `As part of our deep commitment to sustainability, we are strengthening our ethical approach to philanthropic investments.`,
+    },
+    {
+        id: "4",
+        question: "How are gifts managed?",
+        answer: `All donations are managed with care and in compliance with all relevant government regulations.`,
+    },
+    {
+        id: "5",
+        question: "Is my gift tax deductible?",
+        answer: `Your gift can often be enhanced by a variety of tax breaks for charitable action.`,
+    },
+    {
+        id: "6",
+        question: "Can I give a gift from other locations?",
+        answer: `Yes. Contact us to talk about how you’d like to make an impact.`,
+    },
+]
