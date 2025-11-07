@@ -4,7 +4,7 @@ import Typography from "../shared/typography";
 function VisionMission() {
   return (
     <div className="w-full py-8 md:py-16">
-      <section className="max-container 2xl:w-[85%] lg:w-[90%] w-[95%] mx-auto flex flex-col gap-8 md:gap-12">
+      <section className="max-container 2xl:w-[85%] w-[90%] mx-auto flex flex-col gap-8 md:gap-12">
         <div className="w-full lg:w-[80%] xl:w-[70%] flex flex-col md:flex-row md:justify-between md:items-start gap-4 md:gap-8 lg:gap-12">
           <Typography
             typo="header-4-semibold"

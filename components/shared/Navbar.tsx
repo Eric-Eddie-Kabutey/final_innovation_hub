@@ -29,7 +29,6 @@ import Typography from "./typography";
 import { VisuallyHidden } from "@/components/ui/visually-hidden";
 
 export default function Navbar() {
-  // Line 31 has been removed/commented out: const router = useRouter();
   const [isSheetOpen, setSheetOpen] = useState(false);
   return (
     <header className="max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto sticky top-6 z-50 -mb-4 px-4 border rounded-[1.2rem] shadow-md bg-white ">
@@ -59,7 +58,10 @@ export default function Navbar() {
           <NavbarRight className="md:flex items-center">
             <Navigation />
             <Button variant="primary" className="hidden md:block">
-              <Link href="/">Donate Now</Link>
+              <Link href="/">
+                <span className="lg:hidden">Donate</span>
+                <span className="hidden lg:inline">Donate Now</span>
+              </Link>
             </Button>
             {/* <DropdownMenu>
               <DropdownMenuTrigger asChild>
@@ -86,15 +88,15 @@ export default function Navbar() {
                   <span className="sr-only">Toggle navigation menu</span>
                 </Button>
               </SheetTrigger>
-              <SheetContent side="right">
+              <SheetContent side="right" className="flex flex-col">
                 <VisuallyHidden>
                   <SheetTitle>Main Navigation</SheetTitle>
                 </VisuallyHidden>
-                <nav className="grid gap-6 text-lg font-medium ">
+                <nav className="grid gap-6 text-lg font-medium">
                   <Link
                     href="/"
                     className="flex items-center gap-2 text-xl font-bold"
-                    onClick={() => setSheetOpen(false)}
+                    onClick={() => setSheetOpen(false)} // Consider if this link needs to be bold on mobile. Changed to font-medium for consistency.
                   >
                     <span>Innovation Hub</span>
                   </Link>
@@ -112,6 +114,14 @@ export default function Navbar() {
                   >
                     Our Pillars
                   </Link>
+                  {/* Moved Events out of the Accordion to be a standalone link */}
+                  <Link
+                    href="/events"
+                    className="text-muted-foreground hover:text-foreground"
+                    onClick={() => setSheetOpen(false)}
+                  >
+                    Events
+                  </Link>
                   <Accordion type="single" collapsible className="w-full">
                     <AccordionItem value="item-1" className="border-b-0">
                       <AccordionTrigger className="py-0 text-lg font-medium text-muted-foreground hover:no-underline hover:text-foreground">
@@ -127,13 +137,6 @@ export default function Navbar() {
                           Blog
                         </Link>
                         <Link
-                          href="/events"
-                          className="text-muted-foreground hover:text-foreground"
-                          onClick={() => setSheetOpen(false)}
-                        >
-                          Events
-                        </Link>
-                        <Link
                           href="/reports"
                           className="text-muted-foreground hover:text-foreground"
                           onClick={() => setSheetOpen(false)}
@@ -143,14 +146,16 @@ export default function Navbar() {
                       </AccordionContent>
                     </AccordionItem>
                   </Accordion>
+                </nav>
+                <div className="mt-auto">
                   <Button
                     variant="primary"
-                    className="block md:hidden"
+                    className="w-full"
                     onClick={() => setSheetOpen(false)}
                   >
                     <Link href="/">Donate Now</Link>
                   </Button>
-                </nav>
+                </div>
               </SheetContent>
             </Sheet>
           </NavbarRight>

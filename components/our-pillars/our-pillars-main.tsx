@@ -52,12 +52,12 @@ function OurPillarsMain() {
   return (
     <div className="w-full py-24 flex flex-col gap-12 scroll-smooth">
       <div className="w-full bg-gray-50 sticky top-0 z-20 border-b border-gray-200">
-        <div className="max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto flex justify-center md:justify-start gap-6 py-4">
+        <div className="max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto flex justify-center md:justify-start gap-4 md:gap-6 py-4 overflow-x-auto">
           {tabs.map((tab) => (
             <button
               key={tab.id}
               onClick={() => handleScroll(tab.id)}
-              className={`transition-all duration-300 pb-2 border-b-2 ${
+              className={`transition-all duration-300 pb-2 border-b-2 whitespace-nowrap ${
                 activeTab === tab.id
                   ? "border-app-primary text-app-primary"
                   : "border-transparent text-gray-600 hover:text-app-primary"
@@ -161,15 +161,15 @@ function AnimatedSection({
           transition: { duration: 0.8, ease: "easeOut" },
         },
       }}
-      className={`max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto py-20 flex lg:items-start items-center xl:gap-20 lg:gap-16 gap-8 ${
-        reverse ? "flex-row-reverse" : ""
+      className={`max-container 2xl:w-[85%] md:w-[95%] w-[90%] mx-auto py-12 md:py-20 flex flex-col lg:flex-row lg:items-start items-center xl:gap-20 lg:gap-16 gap-12 ${
+        reverse ? "lg:flex-row-reverse" : ""
       }`}
     >
-      <div className="md:block hidden relative xl:w-[550px] w-[450px] h-fit">
+      <div className="relative w-full lg:w-[450px] xl:w-[550px] h-fit">
         <Image
           src={image}
           alt={title}
-          className="w-full h-full rounded-[2rem]"
+          className="w-full h-auto rounded-[2rem]"
         />
         <div className="absolute left-5 bottom-5 p-5 bg-white rounded-full shadow">
           <Play color="#000" fill="#000" />
@@ -186,7 +186,7 @@ function AnimatedSection({
           </Typography>
           <Typography
             typo="header-1-medium"
-            className="xl:!leading-[4.5rem] !leading-[3rem]"
+            className="!leading-[2.5rem] md:!leading-[3rem] xl:!leading-[4.5rem]"
           >
             {subtitle}
           </Typography>
