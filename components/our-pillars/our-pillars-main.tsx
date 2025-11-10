@@ -75,7 +75,7 @@ function OurPillarsMain() {
         image={impactMainImg}
         title="Impact Driven"
         subtitle="Celebrating a Decade+ of Impact Across Africa"
-        text="We have empowered thousands of individuals and communities through our projects. From rural development to youth empowerment, we are committed to making a measurable difference. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur doloremque suscipit ullam id iure facilis iusto eius debitis dolor ipsa consequatur deserunt laborum maxime eligendi atque corrupti facere ipsum maiores cupiditate, quisquam qui libero blanditiis sed. Dignissimos, maxime hic dicta in sunt optio consectetur soluta minima molestias eum modi consequatur quisquam, officiis nemo est neque architecto et voluptate atque ipsa maiores facere illum. Voluptate, architecto. Minus enim quae repellendus ad fugiat adipisci tempora ipsum tempore eligendi deleniti id esse in quidem odit porro iusto asperiores sequi error, exercitationem assumenda natus. Recusandae a facere fugit praesentium possimus eum, est doloribus? Voluptatibus."
+        text="We have empowered thousands of individuals and communities through our various projects. From rural development to youth empowerment, we are committed to making a measurable and lasting difference in people's lives across Africa."
         link="impact"
       />
 
@@ -85,7 +85,7 @@ function OurPillarsMain() {
         image={innovationImg}
         title="Innovation"
         subtitle="Transforming Africa Through Technology and Creativity"
-        text="We harness innovation to solve real challenges. From digital solutions to creative programs, our work inspires new ways of thinking, creating sustainable change across the continent."
+        text="We harness the power of innovation to solve real-world challenges effectively. Through digital solutions and creative programs, our work inspires new ways of thinking and helps in creating sustainable change across the entire continent."
         link="innovation"
       />
 
@@ -95,7 +95,7 @@ function OurPillarsMain() {
         image={mentorshipImg}
         title="Mentorship"
         subtitle="Building Future Leaders Through Guidance and Mentorship"
-        text="Our mentorship programs nurture leadership, creativity, and self-confidence. We connect aspiring young Africans with experts who guide them to reach their full potential. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur doloremque suscipit ullam id iure facilis iusto eius debitis dolor ipsa consequatur deserunt laborum maxime eligendi atque corrupti facere ipsum maiores cupiditate, quisquam qui libero blanditiis sed. Dignissimos, maxime hic dicta in sunt optio consectetur soluta minima molestias eum modi consequatur quisquam, officiis nemo est neque architecto et voluptate atque ipsa maiores facere illum. Voluptate, architecto. Minus enim quae repellendus ad fugiat adipisci tempora ipsum tempore eligendi deleniti id esse in quidem odit porro iusto asperiores sequi error, exercitationem assumenda natus. Recusandae a facere fugit praesentium possimus eum, est doloribus? Voluptatibus."
+        text="Our mentorship programs are designed to nurture future leaders by fostering creativity and self-confidence. We connect aspiring young Africans with seasoned experts who guide them on their journey to reaching their full potential."
         link="mentorship"
       />
 
@@ -105,7 +105,7 @@ function OurPillarsMain() {
         image={innovationImg}
         title="Productivity"
         subtitle="Transforming Africa Through Technology and Creativity"
-        text="We harness innovation to solve real challenges. From digital solutions to creative programs, our work inspires new ways of thinking, creating sustainable change across the continent."
+        text="By focusing on productivity, we aim to enhance efficiency and effectiveness in all our endeavors. Our approach helps in streamlining processes and achieving better outcomes for the communities and individuals we serve."
         link="productivity"
       />
 
@@ -115,7 +115,7 @@ function OurPillarsMain() {
         image={innovationImg}
         title="Leadership"
         subtitle="Transforming Africa Through Technology and Creativity"
-        text="We harness innovation to solve real challenges. From digital solutions to creative programs, our work inspires new ways of thinking, creating sustainable change across the continent."
+        text="We believe in cultivating strong leadership to drive positive change. Our programs are tailored to develop essential leadership skills, empowering individuals to lead with vision, integrity, and a commitment to their communities."
         link="leadership"
       />
     </div>
@@ -192,7 +192,7 @@ function AnimatedSection({
           </Typography>
         </div>
         <div className="flex flex-col gap-3">
-          <Typography>{text}</Typography>
+          <Typography className="text-justify">{text}</Typography>
           <Button
             asChild
             variant="outline"

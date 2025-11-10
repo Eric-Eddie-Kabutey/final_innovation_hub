@@ -6,7 +6,11 @@ import { ArrowUpRight, ExternalLink } from "lucide-react";
 
 const filters = [
   { label: "All Case Studies", value: "all", count: 12 },
-  { label: "Enterprise – (Non-tech organizations)", value: "enterprise", count: 7 },
+  {
+    label: "Enterprise – (Non-tech organizations)",
+    value: "enterprise",
+    count: 7,
+  },
   { label: "Start-up – (Non-tech founders)", value: "startup", count: 5 },
 ];
 
@@ -98,9 +102,9 @@ function CaseStudy() {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.1
-      }
-    }
+        staggerChildren: 0.1,
+      },
+    },
   };
 
   const itemVariants: Variants = {
@@ -110,22 +114,22 @@ function CaseStudy() {
       opacity: 1,
       transition: {
         duration: 0.5,
-        ease: "easeOut"
-      }
-    }
+        ease: "easeOut",
+      },
+    },
   };
 
   return (
     <div className="w-full max-w-7xl mx-auto px-6 py-16 lg:py-24">
       {/* Header */}
       <div className="text-center mb-16">
-        <motion.h2 
+        <motion.h2
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6"
         >
-          Our <span className="text-green-600">Case Studies</span>
+          Our <span className="text-red-600">Case Studies</span>
         </motion.h2>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -133,12 +137,13 @@ function CaseStudy() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-xl text-gray-600 max-w-2xl mx-auto"
         >
-          Real stories of transformation and success from non-tech founders and enterprises
+          Real stories of transformation and success from non-tech founders and
+          enterprises
         </motion.p>
       </div>
 
       {/* Filters */}
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.3 }}
@@ -150,16 +155,18 @@ function CaseStudy() {
             onClick={() => setActiveFilter(f.value)}
             className={`group relative px-6 py-3 rounded-full text-sm font-medium transition-all duration-300 transform hover:scale-105 ${
               activeFilter === f.value
-                ? "bg-gradient-to-r from-green-600 to-emerald-600 text-white shadow-lg"
-                : "bg-white text-gray-700 border border-gray-200 hover:border-green-500 hover:bg-green-50 shadow-md"
+                ? "bg-gradient-to-r from-red-600 to-rose-600 text-white shadow-lg"
+                : "bg-white text-gray-700 border border-gray-200 hover:border-red-500 hover:bg-rose-50 shadow-md"
             }`}
           >
             <span>{f.label}</span>
-            <span className={`ml-2 px-2 py-1 rounded-full text-xs ${
-              activeFilter === f.value 
-                ? "bg-white text-green-600" 
-                : "bg-green-100 text-green-700"
-            }`}>
+            <span
+              className={`ml-2 px-2 py-1 rounded-full text-xs ${
+                activeFilter === f.value
+                  ? "bg-white text-red-600"
+                  : "bg-rose-100 text-red-700"
+              }`}
+            >
               {f.count}
             </span>
           </button>
@@ -167,15 +174,21 @@ function CaseStudy() {
       </motion.div>
 
       {/* Results Count */}
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
         className="text-center mb-8"
       >
         <p className="text-gray-600">
-          Showing {filteredStudies.length} case {filteredStudies.length !== 1 ? 'studies' : 'study'}
-          {activeFilter !== "all" && ` in ${filters.find(f => f.value === activeFilter)?.label.split(' – ')[0]}`}
+          Showing {filteredStudies.length} case{" "}
+          {filteredStudies.length !== 1 ? "studies" : "study"}
+          {activeFilter !== "all" &&
+            ` in ${
+              filters
+                .find((f) => f.value === activeFilter)
+                ?.label.split(" – ")[0]
+            }`}
         </p>
       </motion.div>
 
@@ -193,10 +206,10 @@ function CaseStudy() {
             <motion.div
               key={`${study.title}-${index}`}
               variants={itemVariants}
-              whileHover={{ 
+              whileHover={{
                 scale: 1.02,
                 y: -8,
-                transition: { duration: 0.3 }
+                transition: { duration: 0.3 },
               }}
               className="group relative bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-300"
             >
@@ -209,24 +222,26 @@ function CaseStudy() {
                   className="object-cover group-hover:scale-110 transition-transform duration-500"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
-                
+
                 {/* Overlay Gradient */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                
+
                 {/* Category Badge */}
                 <div className="absolute top-4 left-4">
-                  <span className={`px-3 py-1 rounded-full text-xs font-medium capitalize ${
-                    study.category === 'enterprise' 
-                      ? 'bg-blue-100 text-blue-800' 
-                      : 'bg-orange-100 text-orange-800'
-                  }`}>
+                  <span
+                    className={`px-3 py-1 rounded-full text-xs font-medium capitalize ${
+                      study.category === "enterprise"
+                        ? "bg-blue-100 text-blue-800"
+                        : "bg-orange-100 text-orange-800"
+                    }`}
+                  >
                     {study.category}
                   </span>
                 </div>
 
                 {/* Hover Action Button */}
                 <div className="absolute top-4 right-4 transform translate-x-12 group-hover:translate-x-0 transition-transform duration-300">
-                  <button className="bg-white text-gray-900 p-2 rounded-full shadow-lg hover:bg-green-600 hover:text-white transition-colors duration-300">
+                  <button className="bg-white text-gray-900 p-2 rounded-full shadow-lg hover:bg-red-600 hover:text-white transition-colors duration-300">
                     <ExternalLink className="w-4 h-4" />
                   </button>
                 </div>
@@ -234,23 +249,25 @@ function CaseStudy() {
 
               {/* Content */}
               <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-green-600 transition-colors duration-300">
+                <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-red-600 transition-colors duration-300">
                   {study.title}
                 </h3>
                 <p className="text-gray-600 text-sm leading-relaxed mb-4">
                   {study.description}
                 </p>
                 <div className="flex items-center justify-between">
-                  <button className="flex items-center text-green-600 font-semibold text-sm group-hover:text-green-700 transition-colors duration-300">
+                  <button className="flex items-center text-red-600 font-semibold text-sm group-hover:text-red-700 transition-colors duration-300">
                     View Case Study
                     <ArrowUpRight className="w-4 h-4 ml-1 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
                   </button>
-                  <span className={`text-xs font-medium px-2 py-1 rounded ${
-                    study.category === 'enterprise' 
-                      ? 'bg-blue-50 text-blue-700' 
-                      : 'bg-orange-50 text-orange-700'
-                  }`}>
-                    {study.category === 'enterprise' ? 'Enterprise' : 'Startup'}
+                  <span
+                    className={`text-xs font-medium px-2 py-1 rounded ${
+                      study.category === "enterprise"
+                        ? "bg-blue-50 text-blue-700"
+                        : "bg-orange-50 text-orange-700"
+                    }`}
+                  >
+                    {study.category === "enterprise" ? "Enterprise" : "Startup"}
                   </span>
                 </div>
               </div>
@@ -267,15 +284,29 @@ function CaseStudy() {
           className="text-center py-16"
         >
           <div className="text-gray-400 mb-4">
-            <svg className="w-24 h-24 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            <svg
+              className="w-24 h-24 mx-auto"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={1}
+                d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
             </svg>
           </div>
-          <h3 className="text-xl font-semibold text-gray-700 mb-2">No case studies found</h3>
-          <p className="text-gray-500 mb-6">We couldn&apos;t find any case studies matching your selection</p>
-          <button 
+          <h3 className="text-xl font-semibold text-gray-700 mb-2">
+            No case studies found
+          </h3>
+          <p className="text-gray-500 mb-6">
+            We couldn&apos;t find any case studies matching your selection
+          </p>
+          <button
             onClick={() => setActiveFilter("all")}
-            className="bg-gradient-to-r from-green-600 to-emerald-600 text-white px-6 py-3 rounded-full font-semibold hover:from-green-700 hover:to-emerald-700 transition-all duration-300"
+            className="bg-gradient-to-r from-red-600 to-rose-600 text-white px-6 py-3 rounded-full font-semibold hover:from-red-700 hover:to-rose-700 transition-all duration-300"
           >
             View All Case Studies
           </button>

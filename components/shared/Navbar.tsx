@@ -58,7 +58,7 @@ export default function Navbar() {
           <NavbarRight className="md:flex items-center">
             <Navigation />
             <Button variant="primary" className="hidden md:block">
-              <Link href="/">
+              <Link href="/donate">
                 <span className="lg:hidden">Donate</span>
                 <span className="hidden lg:inline">Donate Now</span>
               </Link>
@@ -153,7 +153,7 @@ export default function Navbar() {
                     className="w-full"
                     onClick={() => setSheetOpen(false)}
                   >
-                    <Link href="/">Donate Now</Link>
+                    <Link href="/donate">Donate Now</Link>
                   </Button>
                 </div>
               </SheetContent>
